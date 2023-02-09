@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOOLS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>main</title>
+    <link rel="stylesheet" href="tools.css" />
+  </head>
+  <body>
+    <div class="grey-top"></div>
+    <div class="page-container">
+      <div class="inner">
+        <div class="first-bar">
+          <div class="first-left">
+            <a href="#" class="black"
+              ><i class="fa fa-chevron-right yellow"></i> contact
+            </a>
+            <a href="#" class="black"
+              ><i class="fa fa-chevron-right yellow"></i> sitemap
+            </a>
+          </div>
+          <div class="first-right">
+            <div class="lang-cur">
+              <h4>language:</h4>
+            </div>
+            <div class="menu">
+              <select>
+                <option value="EN" selected="selected">English</option>
+                <option value="AF">Afrikaans</option>
+                <option value="SQ">Albanian</option>
+                <option value="AR">Arabic</option>
+                <option value="HY">Armenian</option>
+                <option value="EU">Basque</option>
+                <option value="BN">Bengali</option>
+                <option value="BG">Bulgarian</option>
+                <option value="CA">Catalan</option>
+                <option value="KM">Cambodian</option>
+                <option value="ZH">Chinese</option>
+                <option value="HR">Croatian</option>
+                <option value="CS">Czech</option>
+                <option value="DA">Danish</option>
+                <option value="NL">Dutch</option>
+                <option value="ET">Estonian</option>
+                <option value="FJ">Fiji</option>
+                <option value="FI">Finnish</option>
+                <option value="FR">French</option>
+                <option value="KA">Georgian</option>
+                <option value="DE">German</option>
+                <option value="EL">Greek</option>
+                <option value="GU">Gujarati</option>
+                <option value="HE">Hebrew</option>
+                <option value="HI">Hindi</option>
+                <option value="HU">Hungarian</option>
+                <option value="IS">Icelandic</option>
+                <option value="ID">Indonesian</option>
+                <option value="GA">Irish</option>
+                <option value="IT">Italian</option>
+                <option value="JA">Japanese</option>
+                <option value="JW">Javanese</option>
+                <option value="KO">Korean</option>
+                <option value="LA">Latin</option>
+                <option value="LV">Latvian</option>
+                <option value="LT">Lithuanian</option>
+                <option value="MK">Macedonian</option>
+                <option value="MS">Malay</option>
+                <option value="ML">Malayalam</option>
+                <option value="MT">Maltese</option>
+                <option value="MI">Maori</option>
+                <option value="MR">Marathi</option>
+                <option value="MN">Mongolian</option>
+                <option value="NE">Nepali</option>
+                <option value="NO">Norwegian</option>
+                <option value="FA">Persian</option>
+                <option value="PL">Polish</option>
+                <option value="PT">Portuguese</option>
+                <option value="PA">Punjabi</option>
+                <option value="QU">Quechua</option>
+                <option value="RO">Romanian</option>
+                <option value="RU">Russian</option>
+                <option value="SM">Samoan</option>
+                <option value="SR">Serbian</option>
+                <option value="SK">Slovak</option>
+                <option value="SL">Slovenian</option>
+                <option value="ES">Spanish</option>
+                <option value="SW">Swahili</option>
+                <option value="SV">Swedish</option>
+                <option value="TA">Tamil</option>
+                <option value="TT">Tatar</option>
+                <option value="TE">Telugu</option>
+                <option value="TH">Thai</option>
+                <option value="BO">Tibetan</option>
+                <option value="TO">Tonga</option>
+                <option value="TR">Turkish</option>
+                <option value="UK">Ukrainian</option>
+                <option value="UR">Urdu</option>
+                <option value="UZ">Uzbek</option>
+                <option value="VI">Vietnamese</option>
+                <option value="CY">Welsh</option>
+                <option value="XH">Xhosa</option>
+              </select>
+            </div>
+            <div class="bar">
+              <h4>|</h4>
+            </div>
+            <div class="lang-cur">
+              <h4>currency:</h4>
+            </div>
+            <div class="menu">
+              <select>
+                <option value="USD" selected="selected">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="DZD">DZD</option>
+                <option value="ARP">ARP</option>
+                <option value="AUD">AUD</option>
+                <option value="ATS">ATS</option>
+                <option value="BSD">BSD</option>
+                <option value="BBD">BBD</option>
+                <option value="BEF">BEF</option>
+                <option value="BMD">BMD</option>
+                <option value="BRR">BRR</option>
+                <option value="BGL">BGL</option>
+                <option value="CAD">CAD</option>
+                <option value="CLP">CLP</option>
+                <option value="CNY">CNY</option>
+                <option value="CYP">CYP</option>
+                <option value="CSK">CSK</option>
+                <option value="DKK">DKK</option>
+                <option value="NLG">NLG</option>
+                <option value="XCD">XCD</option>
+                <option value="EGP">EGP</option>
+                <option value="FJD">FJD</option>
+                <option value="FIM">FIM</option>
+                <option value="FRF">FRF</option>
+                <option value="DEM">DEM</option>
+                <option value="XAU">XAU</option>
+                <option value="GRD">GRD</option>
+                <option value="HKD">HKD</option>
+                <option value="HUF">HUF</option>
+                <option value="ISK">ISK</option>
+                <option value="INR">INR</option>
+                <option value="IDR">IDR</option>
+                <option value="IEP">IEP</option>
+                <option value="ILS">ILS</option>
+                <option value="ITL">ITL</option>
+                <option value="JMD">JMD</option>
+                <option value="JPY">JPY</option>
+                <option value="JOD">JOD</option>
+                <option value="KRW">KRW</option>
+                <option value="LBP">LBP</option>
+                <option value="LUF">LUF</option>
+                <option value="MYR">MYR</option>
+                <option value="MXP">MXP</option>
+                <option value="NLG">NLG</option>
+                <option value="NZD">NZD</option>
+                <option value="NOK">NOK</option>
+                <option value="PKR">PKR</option>
+                <option value="XPD">XPD</option>
+                <option value="PHP">PHP</option>
+                <option value="XPT">XPT</option>
+                <option value="PLZ">PLZ</option>
+                <option value="PTE">PTE</option>
+                <option value="ROL">ROL</option>
+                <option value="RUR">RUR</option>
+                <option value="SAR">SAR</option>
+                <option value="XAG">XAG</option>
+                <option value="SGD">SGD</option>
+                <option value="SKK">SKK</option>
+                <option value="ZAR">ZAR</option>
+                <option value="KRW">KRW</option>
+                <option value="ESP">ESP</option>
+                <option value="XDR">XDR</option>
+                <option value="SDD">SDD</option>
+                <option value="SEK">SEK</option>
+                <option value="CHF">CHF</option>
+                <option value="TWD">TWD</option>
+                <option value="THB">THB</option>
+                <option value="TTD">TTD</option>
+                <option value="TRL">TRL</option>
+                <option value="TRL">TRL</option>
+                <option value="ZMK">ZMK</option>
+                <option value="EUR">EUR</option>
+                <option value="XCD">XCD</option>
+                <option value="XDR">XDR</option>
+                <option value="XAG">XAG</option>
+                <option value="XAU">XAU</option>
+                <option value="XPD">XPD</option>
+                <option value="XPT">XPT</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="header-bar">
+          <div class="header-left">
+            <h1>TOOLS</h1>
+            <div class="vl"></div>
+            <h4 class="bottomleft">The biggest choice on the web</h4>
+          </div>
+          <div class="header-right">
+            <button class="user-button back-yellow light-yellow">
+              <span class="fa fa-user user-icon"></span>YOUR ACCOUNT
+            </button>
+            <button class="login-button back-grey-categories white">
+              <span class="fa fa-lock lock-icon"></span>LOGIN
+            </button>
+          </div>
+        </div>
+        <div class="container-box">
+          <div class="container-left">
+            <div class="sidebar-box">
+              <div class="label-categories back-yellow light-yellow">
+                <label for="">CATEGORIES</label>
+              </div>
+              <div class="sidebar-main">
+                <div
+                  class="sidenavbar back-grey-categories border-bottom-radius"
+                >
+                  <a href="#">POWER TOOLS</a>
+                  <button class="dropdown-btn line-size">
+                    <span class="fa fa-angle-down"></span>CORDLESS TOOLS
+                  </button>
+                  <div class="dropdown-container">
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                  </div>
+                  <button class="dropdown-btn line-size">
+                    <span class="fa fa-angle-down"></span>POWER TOOL ACCESERIES
+                  </button>
+                  <div class="dropdown-container">
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                  </div>
+                  <a href="#">HAND TOOLS</a>
+                  <a href="#">BATERIES AND CHARGERS</a>
+                  <a href="#">BARE TOOLS</a>
+                  <a href="#">ELECTRONIC TOOLS</a>
+                  <a href="#">PLUMBING TOOLS</a>
+                  <a href="#">SAFETY EQUIPMENT</a>
+                  <a href="#">LASERS</a>
+                  <a href="#">TEST AND MESUREMENTS</a>
+                  <a class="border-bottom-radius" href="#"
+                    >TRUCK & VAN EQUIPMENT</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="seller-lable back-white-grey box-shadow">
+              BEST SELLERS
+            </div>
+            <div class="seller-card-box">
+              <div class="seller-card">
+                <div class="seller-left">
+                  <img src="./images/circular-saw.jpeg" alt="" />
+                </div>
+                <div class="seller-right">
+                  <h6>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit
+                  </h6>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                  <h4>$187.89</h4>
+                </div>
+              </div>
+              <div class="seller-card">
+                <div class="seller-left">
+                  <img src="./images/circular-saw.jpeg" alt="" />
+                </div>
+                <div class="seller-right">
+                  <h6>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit
+                  </h6>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                  <h4>$187.89</h4>
+                </div>
+              </div>
+              <div class="seller-card">
+                <div class="seller-left">
+                  <img src="./images/circular-saw.jpeg" alt="" />
+                </div>
+                <div class="seller-right">
+                  <h6>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit
+                  </h6>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                  <h4>$187.89</h4>
+                </div>
+              </div>
+              <div class="seller-card">
+                <div class="seller-left">
+                  <img src="./images/circular-saw.jpeg" alt="" />
+                </div>
+                <div class="seller-right">
+                  <h6>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit
+                  </h6>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                  <h4>$187.89</h4>
+                </div>
+              </div>
+              <div class="seller-card">
+                <div class="seller-left">
+                  <img src="./images/circular-saw.jpeg" alt="" />
+                </div>
+                <div class="seller-right">
+                  <h6>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit
+                  </h6>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                  <h4>$187.89</h4>
+                </div>
+              </div>
+            </div>
+            <div class="seller-button">
+              <button>ALL BEST SELLERS</button>
+            </div>
+            <div class="add-card back-yellow border-radius-all">
+              <img
+                class="border-radius-all"
+                src="./images/giirl-hedge-trimmer.jpeg"
+                alt=""
+              />
+              <p class="light-yellow">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit
+              </p>
+              <button class="back-grey-categories white yellow-button">
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+          <div class="container-right">
+            <div class="main-bar white back-grey-categories">
+              <div class="search-box">
+                <div class="input-wrapper back-light-grey">
+                  <i class="fa fa-search"></i>
+                  <input class="back-light-grey" type="text" />
+                </div>
+                <button class="light-yellow back-yellow" type="submit">
+                  Search
+                </button>
+              </div>
+              <div class="shopping-wrapper back-grey">
+                <i class="fa fa-shopping-cart"></i>
+                <p class="yellow" id="cart-items">CART:</p>
+                <input class="back-grey" type="text" placeholder="(empty)" />
+                <i class="fa fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="main-container">
+              <div class="carousel-wrapper">
+                <div class="myslide">
+                  <div class="img-container">
+                    <img src="/images/Stihl-Hedge-Trimmer.jpeg" alt="" />
+                  </div>
+                  <div class="text-container">
+                    <div class="text-white">HEDGE TRIMMER</div>
+                    <div class="text-yellow">GET UP TO</div>
+                    <div class="text-red">20% OFF</div>
+                    <div class="p-white">
+                      Lorem ipsum dolor sit, amet consectetur
+                      <br />
+                      adipisicing elit. Fugit, commodi.
+                    </div>
+                    <button class="shop-now back-yellow light-yellow">
+                      SHOP NOW!
+                    </button>
+                  </div>
+                  <div class="angle-right">
+                    <a class="fa fa-chevron-right"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-box">
+                <div class="left-side">
+                  <div class="card-inner">
+                    <img src="./images/circular-saw.jpeg" alt="" />
+                    <div class="card-text back-yellow light-yellow">
+                      <h2>ELECTRICIANS TOOLS</h2>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit.
+                        <i class="fa fa-angle-right"></i>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-inner">
+                    <img src="./images/circular-saw.jpeg" alt="" />
+                    <div class="card-text back-grey-categories white">
+                      <h2>ELECTRICIANS TOOLS</h2>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit.
+                        <i class="fa fa-angle-right"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-side">
+                  <div class="card-inner">
+                    <img src="./images/circular-saw.jpeg" alt="" />
+                    <div class="card-text back-grey-categories white">
+                      <h2>ELECTRICIANS TOOLS</h2>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit.
+                        <i class="fa fa-angle-right"></i>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-inner">
+                    <img src="./images/circular-saw.jpeg" alt="" />
+                    <div class="card-text back-yellow light-yellow">
+                      <h2>ELECTRICIANS TOOLS</h2>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit.
+                        <i class="fa fa-angle-right"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="featured-bar back-white-grey box-shadow">
+                FEATURED PRODUCTS
+              </div>
+              <div class="featured-card-box">
+                <div class="featured-card">
+                  <div class="left-featured">
+                    <img src="./images/saw-cutter.jpeg" alt="" />
+                    <button class="back-green white new-button">NEW!</button>
+                  </div>
+                  <div class="right-featured">
+                    <h4 class="yellow">$187.89</h4>
+                    <h6>Lorem ipsum dolor sit amet</h6>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit
+                    </p>
+                    <div class="button-part">
+                      <i
+                        class="fa fa-shopping-cart back-grey-categories white box-shadow"
+                      ></i>
+                      <button
+                        class="back-yellow light-yellow yellow-button box-shadow cart-btn"
+                        type="button"
+                      >
+                        ADD TO CART
+                      </button>
+                      <button class="back-white-grey box-shadow">VIEW</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="featured-card">
+                  <div class="left-featured">
+                    <img src="./images/saw-cutter.jpeg" alt="" />
+                    <button class="back-red white sale-button">ON SALE!</button>
+                  </div>
+                  <div class="right-featured">
+                    <h4 class="yellow">$187.89</h4>
+                    <h6>Lorem ipsum dolor sit amet</h6>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit
+                    </p>
+                    <div class="button-part">
+                      <i
+                        class="fa fa-shopping-cart back-grey-categories white box-shadow"
+                      ></i>
+                      <button
+                        class="back-yellow light-yellow yellow-button box-shadow cart-btn"
+                        type="button"
+                      >
+                        ADD TO CART
+                      </button>
+                      <button class="back-white-grey box-shadow">VIEW</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="featured-card">
+                  <div class="left-featured">
+                    <img src="./images/saw-cutter.jpeg" alt="" />
+                    <button class="back-red white sale-button">ON SALE!</button>
+                  </div>
+                  <div class="right-featured">
+                    <h4 class="yellow">$187.89</h4>
+                    <h6>Lorem ipsum dolor sit amet</h6>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit
+                    </p>
+                    <div class="button-part">
+                      <i
+                        class="fa fa-shopping-cart back-grey-categories white box-shadow"
+                      ></i>
+                      <button
+                        class="back-yellow light-yellow yellow-button box-shadow cart-btn"
+                        type="button"
+                      >
+                        ADD TO CART
+                      </button>
+                      <button class="back-white-grey box-shadow">VIEW</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="featured-card">
+                  <div class="left-featured">
+                    <img src="./images/saw-cutter.jpeg" alt="" />
+                  </div>
+                  <div class="right-featured">
+                    <h4 class="yellow">$187.89</h4>
+                    <h6>Lorem ipsum dolor sit amet</h6>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit
+                    </p>
+                    <div class="button-part">
+                      <i
+                        class="fa fa-shopping-cart back-grey-categories white box-shadow"
+                      ></i>
+                      <button
+                        class="back-yellow light-yellow yellow-button box-shadow cart-btn"
+                        type="button"
+                      >
+                        ADD TO CART
+                      </button>
+                      <button class="back-white-grey box-shadow">VIEW</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="featured-card">
+                  <div class="left-featured">
+                    <img src="./images/saw-cutter.jpeg" alt="" />
+                    <button class="back-green white new-button">NEW!</button>
+                  </div>
+                  <div class="right-featured">
+                    <h4 class="yellow">$187.89</h4>
+                    <h6>Lorem ipsum dolor sit amet</h6>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit
+                    </p>
+                    <div class="button-part">
+                      <i
+                        class="fa fa-shopping-cart back-grey-categories white box-shadow"
+                      ></i>
+                      <button
+                        class="back-yellow light-yellow yellow-button box-shadow cart-btn"
+                        type="button"
+                      >
+                        ADD TO CART
+                      </button>
+                      <button class="back-white-grey box-shadow">VIEW</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="featured-card">
+                  <div class="left-featured">
+                    <img src="./images/saw-cutter.jpeg" alt="" />
+                  </div>
+                  <div class="right-featured">
+                    <h4 class="yellow">$187.89</h4>
+                    <h6>Lorem ipsum dolor sit amet</h6>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit
+                    </p>
+                    <div class="button-part">
+                      <i
+                        class="fa fa-shopping-cart back-grey-categories white box-shadow"
+                      ></i>
+                      <button
+                        class="back-yellow light-yellow yellow-button box-shadow cart-btn"
+                        type="button"
+                      >
+                        ADD TO CART
+                      </button>
+                      <button class="back-white-grey box-shadow">VIEW</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="featured-card">
+                  <div class="left-featured">
+                    <img src="./images/saw-cutter.jpeg" alt="" />
+                    <button class="back-green white new-button">NEW!</button>
+                  </div>
+                  <div class="right-featured">
+                    <h4 class="yellow">$187.89</h4>
+                    <h6>Lorem ipsum dolor sit amet</h6>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit
+                    </p>
+                    <div class="button-part">
+                      <i
+                        class="fa fa-shopping-cart back-grey-categories white box-shadow"
+                      ></i>
+                      <button
+                        class="back-yellow light-yellow yellow-button box-shadow cart-btn"
+                        type="button"
+                      >
+                        ADD TO CART
+                      </button>
+                      <button class="back-white-grey box-shadow">VIEW</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="featured-card">
+                  <div class="left-featured">
+                    <img src="./images/saw-cutter.jpeg" alt="" />
+                  </div>
+                  <div class="right-featured">
+                    <h4 class="yellow">$187.89</h4>
+                    <h6>Lorem ipsum dolor sit amet</h6>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit
+                    </p>
+                    <div class="button-part">
+                      <i
+                        class="fa fa-shopping-cart back-grey-categories white box-shadow"
+                      ></i>
+                      <button
+                        class="back-yellow light-yellow yellow-button box-shadow cart-btn"
+                        type="button"
+                      >
+                        ADD TO CART
+                      </button>
+                      <button class="back-white-grey box-shadow">VIEW</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="featured-card">
+                  <div class="left-featured">
+                    <img src="./images/saw-cutter.jpeg" alt="" />
+                    <button class="back-red white sale-button">ON SALE!</button>
+                  </div>
+                  <div class="right-featured">
+                    <h4 class="yellow">$187.89</h4>
+                    <h6>Lorem ipsum dolor sit amet</h6>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit
+                    </p>
+                    <div class="button-part">
+                      <i
+                        class="fa fa-shopping-cart back-grey-categories white box-shadow"
+                      ></i>
+                      <button
+                        class="back-yellow light-yellow yellow-button box-shadow cart-btn"
+                        type="button"
+                      >
+                        ADD TO CART
+                      </button>
+                      <button class="back-white-grey box-shadow">VIEW</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-part">
+        <div class="inner">
+          <div class="cards-box">
+            <div class="btm-card">
+              <div class="left-part">
+                <img src="./images/circular-saw.jpeg" alt="" />
+              </div>
+              <div class="right-text">
+                <h4>CUSTOM BLOCK 1</h4>
+                <p class="yellow">Lorem ipsum dolor sit amet</p>
+                <p class="light-grey">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Iusto soluta ipsum nostrum nisi quod
+                </p>
+              </div>
+            </div>
+            <div class="btm-card back-grey-categories">
+              <div class="left-part">
+                <img src="Stihl-Hedge-Trimmer.jpeg" alt="" />
+              </div>
+              <div class="right-text">
+                <h4 class="white">CUSTOM BLOCK 1</h4>
+                <p class="yellow">Lorem ipsum dolor sit amet</p>
+                <p class="light-grey">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Iusto soluta ipsum nostrum nisi quod
+                </p>
+              </div>
+            </div>
+            <div class="btm-card back-yellow">
+              <div class="right-text">
+                <h4 class="light-yellow">CUSTOM BLOCK 1</h4>
+                <p class="black">Lorem ipsum dolor sit amet</p>
+                <p class="grey light-yellow">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Iusto soluta ipsum nostrum nisi quod
+                </p>
+                <p class="grey light-yellow">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Iusto soluta ipsum nostrum nisi quod
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row grey">
+            <hr />
+          </div>
+          <div class="list-box">
+            <div class="col-2">
+              <h4>INFORMATION</h4>
+              <ul>
+                <li class="grey">
+                  <i class="fa fa-chevron-right yellow icon"></i
+                  ><a href="#"></a>Specials
+                </li>
+                <li class="grey">
+                  <i class="fa fa-chevron-right yellow icon"></i
+                  ><a href="#"></a>New products
+                </li>
+                <li class="grey">
+                  <i class="fa fa-chevron-right yellow icon"></i
+                  ><a href="#"></a>Best sellers
+                </li>
+                <li class="grey">
+                  <i class="fa fa-chevron-right yellow icon"></i
+                  ><a href="#"></a>Our store[s]!
+                </li>
+                <li class="grey">
+                  <i class="fa fa-chevron-right yellow icon"></i
+                  ><a href="#"></a>Contact us
+                </li>
+                <li class="grey">
+                  <i class="fa fa-chevron-right yellow icon"></i
+                  ><a href="#"></a>Pages configruation
+                </li>
+              </ul>
+            </div>
+            <div class="col-2">
+              <h4>MY ACCOUNT</h4>
+              <ul>
+                <li class="grey">
+                  <i class="fa fa-chevron-right yellow icon"></i
+                  ><a href="#"></a>My orders
+                </li>
+                <li class="grey">
+                  <i class="fa fa-chevron-right yellow icon"></i
+                  ><a href="#"></a>My merchandise returns
+                </li>
+                <li class="grey">
+                  <i class="fa fa-chevron-right yellow icon"></i
+                  ><a href="#"></a>My credit slips
+                </li>
+                <li class="grey">
+                  <i class="fa fa-chevron-right yellow icon"></i
+                  ><a href="#"></a>My addresses
+                </li>
+                <li class="grey">
+                  <i class="fa fa-chevron-right yellow icon"></i
+                  ><a href="#"></a>My personal info
+                </li>
+                <li class="grey">
+                  <i class="fa fa-chevron-right yellow icon"></i
+                  ><a href="#"></a>My orders
+                </li>
+              </ul>
+            </div>
+            <div class="col-2">
+              <h4>FOLLOW US</h4>
+              <ul>
+                <li class="grey">
+                  <i class="fa fa-chevron-right yellow icon"></i
+                  ><a href="#"></a>Facebook
+                </li>
+                <li class="grey">
+                  <i class="fa fa-chevron-right yellow icon"></i
+                  ><a href="#"></a>Twitter
+                </li>
+                <li class="grey">
+                  <i class="fa fa-chevron-right yellow icon"></i
+                  ><a href="#"></a>RSS
+                </li>
+              </ul>
+            </div>
+            <div class="col-2">
+              <h4>CONTACT US</h4>
+              <h5 class="grey size">My company</h5>
+              <p class="grey size">4578 Manmora Road, Grasgrow D04 89GR</p>
+              <p class="grey size">Tel 1(642) 567 8974</p>
+              <h6 class="grey size">
+                Email:<a class="yellow" href="#">info@demolink.org</a>
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="inner">
+          &copy;2013 Powered by Pesto Shop <span>TM</span>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
