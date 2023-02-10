@@ -1,3 +1,4 @@
+// categories dropdown list
 var dropdown = document.getElementsByClassName("dropdown-btn");
 for (var i = 0; i < dropdown.length; i++) {
   dropdown[i].addEventListener("click", function () {
@@ -10,6 +11,7 @@ for (var i = 0; i < dropdown.length; i++) {
     }
   });
 }
+// adding array for future purpose
 
 let products = [
   {
@@ -68,6 +70,8 @@ let products = [
   },
 ];
 
+//when button clicked, product gets added to the cart, the number of products increses
+
 let carts = document.getElementsByClassName("cart-btn");
 for (let i = 0; i < carts.length; i++) {
   console.log("my loop");
@@ -75,6 +79,9 @@ for (let i = 0; i < carts.length; i++) {
     cartNumbers();
   });
 }
+
+// maintaining old cart values
+
 function onLoadCartNumbers() {
   let productNumbers = localStorage.getItem("cartNumbers");
   if (productNumbers) {
