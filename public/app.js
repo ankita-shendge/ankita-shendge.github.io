@@ -106,3 +106,19 @@ function cartNumbers() {
   }
 }
 onLoadCartNumbers();
+
+window.onload = function () {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML = this.responseText;
+      let data = JSON.parse(this.responseText);
+      let parentDiv = document.getElementById("feature-cards");
+      for (entry in data) {
+        //TODO insert new card view for tool created using entry object into parentDiv
+      }
+    }
+  };
+  xhttp.open("GET", "productInfo.json", true);
+  xhttp.send();
+};
