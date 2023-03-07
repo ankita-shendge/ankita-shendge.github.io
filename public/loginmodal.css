@@ -1,0 +1,131 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: sans-serif;
+}
+
+.lock-icon {
+  color: #fd9b05;
+  margin: 3px;
+}
+
+.popup {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-color: rgb(214, 208, 208);
+  width: 500px;
+  height: 500px;
+  padding: 20px 20px;
+  box-shadow: 2px rgba(0, 0, 0, 0.15);
+}
+
+.title-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+#lg-btn,
+#reg-btn {
+  padding: 20px 30px;
+  font-size: 20px;
+  font-weight: 600px;
+  color: #fd9b05;
+  background-color: rgb(59, 58, 58);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  border-left: 1px solid #fd9b05;
+}
+.fa-user,
+.fa-user-plus {
+  color: #fd9b05;
+  padding-right: 10px;
+}
+.form-wrapper {
+  padding: 20px 30px;
+  font-size: 20px;
+  width: 100%;
+}
+
+#lable-password,
+#lable-email {
+  color: rgb(59, 58, 58);
+  padding: 12px 20px;
+}
+
+#input-email,
+#input-password {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#btn-login,
+#btn-close {
+  padding: 15px 20px;
+  font-size: 20px;
+  font-weight: 600px;
+  color: #fd9b05;
+  background-color: rgb(59, 58, 58);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  border-left: 1px solid #fd9b05;
+  margin-top: 10px;
+}
+
+#center {
+  margin: auto;
+  width: 80%;
+}
+
+#card-footer {
+  display: block;
+  color: rgb(59, 58, 58);
+  padding: 15px 20px;
+}
+
+#forgot-pwd {
+  padding-left: 30px;
+}
+
+#flex {
+  display: flex;
+  color: rgb(59, 58, 58);
+  padding-top: 10px;
+  padding-left: 10px;
+  font-weight: 500;
+  justify-content: space-around;
+}
+
+.fa-solid {
+  padding-top: 5px;
+}
+
+.tab-form .tab-body > div {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 300ms ease-in-out 0ms;
+}
+
+.tab-form .tab-body > div.active {
+  opacity: 1;
+  transition: opacity 300ms ease-in-out 0ms;
+}
+
+.tab-body {
+  position: relative;
+  margin: 10px;
+}

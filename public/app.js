@@ -119,6 +119,6 @@ window.onload = function () {
       }
     }
   };
-  xhttp.open("GET", "productInfo.json", true);
+  xhttp.open("GET", "/tools", true);
   xhttp.send();
 };
