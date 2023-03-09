@@ -1,3 +1,4 @@
+// javascript for tab
 let tab = document.querySelector(".tab-form");
 let tabHeader = document.querySelector(".tab-header");
 let tabHeaderElements = tab.querySelectorAll(".tab-header > button");
