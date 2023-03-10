@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Linkin CSS file -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -14,12 +15,8 @@
     <title>Modal-popup</title>
   </head>
   <body>
-    <!-- <div class="center">
-      <button id="show-login">
-        <span class="fa fa-lock lock-icon"></span>LOGIN
-      </button>
-    </div> -->
     <div class="tab-form popup">
+      <!-- heading tabs Login and Register -->
       <div class="tab-header title-wrapper">
         <button class="active" id="lg-btn" type="submit">
           <span class="fa-solid fa-user"></span>Login
@@ -28,15 +25,19 @@
           <span class="fa-solid fa-user-plus"></span>Register
         </button>
       </div>
+      <!-- Body Form part for Login and Registration Button -->
       <div class="tab-body">
+        <!-- login Form Part -->
         <div class="tab-LogIN active">
           <form class="form-wrapper" action="">
+            <!-- Email Div -->
             <div id="email_lb_ip">
               <label id="lable-email" for="email"
                 ><i class="fa-solid fa-envelope"></i
               ></label>
               <input id="input-email" type="text" placeholder="Your Email" />
             </div>
+            <!-- Password Div -->
             <div id="password_lb_ip">
               <label id="lable-password" for="password"
                 ><i class="fa-solid fa-lock"></i
@@ -47,6 +48,7 @@
                 placeholder="Your Password"
               />
             </div>
+            <!-- remember me and forgot password span -->
             <div id="flex">
               <div>
                 <input type="checkbox" checked="checked" name="remember" />
@@ -58,21 +60,28 @@
               </div>
             </div>
           </form>
+          <!-- sign up button div -->
           <div id="center">
             <button id="btn-login">Sign Up</button>
           </div>
+          <!-- close button div -->
           <div id="center">
             <button id="btn-close" type="submit">Close</button>
           </div>
         </div>
+
+        <!-- Register Form Part -->
+
         <div class="tab-register">
           <div class="form-wrapper">
+            <!-- Email Div -->
             <div id="email_lb_ip">
               <label id="lable-email" for="email"
                 ><i class="fa-solid fa-envelope"></i
               ></label>
               <input id="input-email" type="text" placeholder="Your Email" />
             </div>
+            <!-- Password Div -->
             <div id="password_lb_ip">
               <label id="lable-password" for="password"
                 ><i class="fa-solid fa-lock"></i
@@ -83,6 +92,7 @@
                 placeholder="Your Password"
               />
             </div>
+            <!-- Remember-Password Div -->
             <div id="password_lb_ip">
               <label id="lable-password" for="password"
                 ><i class="fa-solid fa-lock"></i
@@ -93,6 +103,7 @@
                 placeholder="Reconfirm Password"
               />
             </div>
+            <!-- Sign Up Button -->
             <div id="center">
               <button id="btn-login">Sign Up</button>
             </div>
@@ -100,6 +111,7 @@
         </div>
       </div>
     </div>
+    <!-- Linkin Javascript file and Fontawesome API -->
     <script
       src="https://kit.fontawesome.com/840d1e77bc.js"
       crossorigin="anonymous"

@@ -1,4 +1,4 @@
-// javascript for tab
+// javascript for tab switch Login and Registration
 let tab = document.querySelector(".tab-form");
 let tabHeader = document.querySelector(".tab-header");
 let tabHeaderElements = tab.querySelectorAll(".tab-header > button");
