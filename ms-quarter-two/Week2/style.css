@@ -105,7 +105,7 @@ a:hover {
 .tag_line_info {
   position: absolute;
   display: block;
-  top: 60%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
