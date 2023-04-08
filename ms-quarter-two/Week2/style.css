@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&display=swap");
-
+/* root css */
 * {
   padding: 0;
   margin: 0;
@@ -10,15 +10,19 @@
   background-color: white;
 }
 
+/* body css */
+
 body {
   background-color: rgb(220, 215, 215);
 }
+
+/* page container */
 .page-wrapper {
   width: 1024px;
   margin: 0 auto;
 }
 
-/* header section which includes title and navbar */
+/* header section which includes img, title-text and navbar  */
 
 .title_part {
   position: relative;
@@ -29,6 +33,32 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+
+/* tried using linear gradient but not looking good, failed */
+
+/* .title_imgphoto {
+  position: relative;
+}
+
+.title_imgphoto::before {
+  content: "";
+  position: absolute;
+  top: 5%;
+  right: 0;
+  width: 40%;
+  height: 10%;
+  background: linear-gradient(to bottom left, transparent, black);
+  z-index: 1;
+
+}
+
+.title_imgphoto img {
+  display: block;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+} */
+
 .title_text {
   width: 100%;
   position: absolute;
@@ -38,28 +68,27 @@ body {
   padding: 20px 30px;
   background-color: transparent;
 }
-/* .title-row {
-  display: flex;
-  justify-content: space-around;
-} */
 
 .website_name {
   font-size: 35px;
   color: white;
   background-color: transparent;
 }
+
 .nav-bar {
-  margin-top: 10px;
   background-color: transparent;
 }
+
 .nav-bar ul {
   background-color: transparent;
   margin-top: 10px;
 }
+
 .nav-bar li {
   display: inline;
   background-color: transparent;
 }
+
 .nav-bar a {
   color: rgb(235, 227, 227);
   -webkit-text-stroke: 0.1px rgb(195, 194, 194);
@@ -105,7 +134,7 @@ a:hover {
   border: none;
 }
 
-/* second section */
+/* second section which includes h2 and p */
 
 .second-section {
   text-align: center;
@@ -125,7 +154,7 @@ a:hover {
   color: rgb(113, 113, 113);
 }
 
-/* third-section */
+/* third-section includes fevorite hikes with img and name */
 
 .third-section h3 {
   text-align: center;
@@ -153,7 +182,8 @@ a:hover {
   color: rgb(113, 113, 113);
 }
 
-/* forth-section */
+/* forth-section includes featured video and and information */
+
 .forth-section {
   display: block;
 }
@@ -167,7 +197,7 @@ a:hover {
 }
 .text-embed {
   text-align: center;
-  margin-top: 120px;
+  margin-top: 80px;
   padding: 40px;
 }
 .text-embed h4 {
@@ -186,9 +216,11 @@ a:hover {
   color: rgb(113, 113, 113);
 }
 
-/* fifth section */
+.text-embed audio {
+  margin-top: 30px;
+}
 
-/* Set default font and background color for the entire page */
+/* fifth section is created with table*/
 
 /* Style the table */
 table {
@@ -227,7 +259,7 @@ table {
   color: rgb(113, 113, 113);
 }
 
-/* sixth section */
+/* sixth section subscribe section */
 
 .sixth-section {
   text-align: center;
