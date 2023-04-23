@@ -4,28 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=100%, initial-scale=1.0" />
+    <!-- css linked -->
     <link rel="stylesheet" href="style.css" />
+    <!-- title of website -->
     <title>RestroBar</title>
   </head>
   <body>
+    <!-- page wrapper class to stay content at the centre of the page -->
     <div class="page-wrapper">
       <div class="home-page">
+        <!-- header part -->
         <header class="title-section">
           <div class="tittle-logo">
             <img src="Images/logo.png" alt="logo" />
           </div>
+          <!-- navbar -->
           <nav class="nav-bar">
             <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#menu">Menu</a></li>
-              <li><a href="#gallery">Gallery</a></li>
-              <li><a href="#order">Online Order</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <!-- <li><a href="#home">Home</a></li> -->
+              <li><a href="#project-brief">Project Brief</a></li>
+              <li><a href="#about">Fine-Dine</a></li>
+              <!-- <li><a href="#menu">Menu</a></li> -->
+              <li><a href="#Gallery">Gallery</a></li>
+              <!-- <li><a href="#order">Online Order</a></li> -->
             </ul>
           </nav>
         </header>
+        <!-- main part -->
         <main>
+          <!-- first section about online order info -->
           <section class="online_order">
             <div class="online_order_img">
               <img
@@ -40,11 +47,97 @@
                 with the necessary regelialia. It is a paradisematic country, in
                 which roasted parts of sentences fly into your mouth.
               </p>
-              <button id="order-button">Get Your Order here</button>
+              <button type="submit" id="order-button">
+                <a href="#"> Get Your Order here</a>
+              </button>
+            </div>
+          </section>
+          <!-- seconnd section is about project brief added pdf as per rubric -->
+          <section>
+            <div id="project-brief" class="project-brief">
+              <h2 class="brief-tittle">Project Brief</h2>
+              <button class="full_screen" onclick="openFullscreen()">
+                Open PDF in Full Screen
+              </button>
+              <iframe
+                class="brief-pdf"
+                id="myIframe"
+                src="pdf/_Shendge.AnkitaMahadeo.RestroBar_Project_Brief (1).pdf"
+                frameborder="0"
+              ></iframe>
+            </div>
+            <div id="about" class="project-brief">
+              <h2 class="brief-tittle">Fine-Dine</h2>
+              <button class="full_screen2" onclick="openFullscreen2()">
+                Open Website in Full Screen
+              </button>
+              <iframe
+                class="brief-pdf"
+                id="myIframe2"
+                src="https://scallionpancake.com/blog/tag/Fine+Dining"
+                frameborder="0"
+              ></iframe>
+            </div>
+          </section>
+          <!-- third section is about gallery  -->
+          <section id="Gallery" class="Food-Gallary">
+            <section id="Gallery" class="fifth-section">
+              <h3>Galllery</h3>
+              <div class="galllery">
+                <table>
+                  <tr class="table-row">
+                    <td>
+                      <div class="card-gallery">
+                        <img
+                          src="https://images.squarespace-cdn.com/content/v1/55cbe361e4b07fb58f98f398/1543553883131-A1TSQNCJ5ZPXC975AA6O/IMG_8659.JPG?format=1000w"
+                          alt="Image 1"
+                        />
+                        <p>Oysters</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="card-gallery">
+                        <img src="Images/images (1).jpeg" alt="Image 2" />
+                        <p>Angkor Special</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="card-gallery">
+                        <img src="Images/download.jpeg" alt="" />
+                        <p>Cheery Delight</p>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </section>
+          </section>
+          <!-- forth-section is about advertisement -->
+          <section>
+            <div class="project-brief">
+              <h3 class="brief-tittle">Advertisement</h3>
+              <button class="full_screen3" onclick="openFullscreen3()">
+                Open Website in Full Screen
+              </button>
+              <iframe
+                class="brief-pdf"
+                id="myIframe3"
+                src="https://www.oasysparquetematico.com/en/most-famous-indian-chiefs-west/"
+                frameborder="0"
+              ></iframe>
             </div>
           </section>
         </main>
+        <!-- footer -->
+        <footer class="footer">
+          <p>
+            123 Demo Street, California CA | (555) 555-5555 |
+            <a href="mailto:email@example.com">email@example.com</a>
+          </p>
+        </footer>
       </div>
     </div>
+    <!-- external js added -->
+    <script src="App.js"></script>
   </body>
 </html>
