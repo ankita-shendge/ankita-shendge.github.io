@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Header Part -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css file linking style.css -->
+    <link rel="stylesheet" href="Style.css" />
+    <!-- fontawesome API  for icons -->
+    <script
+      src="https://kit.fontawesome.com/840d1e77bc.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>VueLamp</title>
+  </head>
+  <body>
+    <div class="hero">
+      <!-- navbar -->
+      <nav>
+        <img src="images/menu.png" class="menu-img" />
+        <img src="images/logo.png" class="logo" />
+        <ul id="ulist">
+          <li><a href="">Latest</a></li>
+          <li><a href="">Mordern</a></li>
+          <li><a href="">Contemporary</a></li>
+          <li><a href="">Affordable</a></li>
+        </ul>
+        <a
+          href="javascript:void(0);"
+          class="icon"
+          id="mylink"
+          onclick="showlink()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+        <button class="togglebtn" type="button" onclick="togglebtn()" id="btn">
+          <span></span>
+        </button>
+      </nav>
+      <!-- lamp design -->
+      <div class="lamp-container">
+        <img src="images/lamp.png" alt="" class="lamp" />
+        <img src="images/light.png" alt="" class="light" id="light" />
+      </div>
+      <!-- text-info  -->
+      <div class="text-container">
+        <h1>
+          Latest <br />
+          in Lightning
+        </h1>
+        <p>
+          This is first lamp from our company. We're making a huge colleection
+          of mordern lamps in all categories from home use to office use
+        </p>
+        <a href="">Check all collections</a>
+        <div class="control">
+          <p>04</p>
+          <div class="line"><span></span></div>
+          <p>05</p>
+        </div>
+      </div>
+    </div>
+    <!-- JS code -->
+    <script>
+      var btn = document.getElementById("btn");
+      var light = document.getElementById("light");
+
+      function togglebtn() {
+        btn.classList.toggle("active");
+        light.classList.toggle("on");
+      }
+
+      var x = document.getElementById("mylink");
+      var ulist = document.getElementById("ulist");
+
+      function showlink() {
+        if (ulist.style.display === "none") {
+          ulist.style.display = "block";
+        } else {
+          ulist.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>

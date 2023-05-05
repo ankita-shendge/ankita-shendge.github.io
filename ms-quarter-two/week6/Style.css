@@ -1,0 +1,403 @@
+/* project container */
+.hero {
+  background-color: #1d2026;
+  min-height: 100vh;
+  width: 100%;
+  color: #fff;
+  position: relative;
+}
+/* navbar css */
+nav {
+  display: flex;
+  align-items: center;
+  padding: 20px 8%;
+}
+
+nav .menu-img {
+  width: 25px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+nav .logo {
+  width: 160px;
+  cursor: pointer;
+}
+
+nav ul {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffff;
+}
+
+/* toggle button */
+button {
+  background-color: #efefef;
+  height: 30px;
+  width: 60px;
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  transition: background 0.5s, margin-left 0.5s;
+}
+
+button span {
+  display: block;
+  background: #999;
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  margin-left: 2px;
+}
+/* lamp css */
+.lamp-container {
+  position: absolute;
+  top: 0;
+  left: 22%;
+  width: 200px;
+}
+
+.lamp {
+  width: 100%;
+}
+
+.light {
+  position: absolute;
+  top: 97%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 700px;
+  margin-left: -10px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+/* text-info css */
+.text-container {
+  max-width: 600px;
+  margin-top: 7%;
+  margin-left: 50%;
+}
+
+.text-container h1 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.text-container a {
+  text-decoration: none;
+  background: #00986f;
+  padding: 14px 40px;
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 30px;
+  border-radius: 30px;
+}
+
+/* bottpm line css */
+.control {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 150px;
+}
+
+.control .line {
+  width: 250px;
+  height: 4px;
+  background-color: #fff;
+  margin: 0 20px;
+  border-radius: 2px;
+}
+
+.control .line span {
+  width: 50%;
+  height: 8px;
+  margin-top: -2px;
+  border-radius: 4px;
+  background-color: #00986f;
+  display: block;
+}
+
+.active {
+  background: green;
+}
+
+.active span {
+  background-color: #fff;
+  margin-left: 31px;
+}
+
+.on {
+  opacity: 1;
+}
+
+.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 5%;
+  top: 2.5%;
+  color: white;
+  opacity: 0;
+  font-size: 20px;
+}
+
+/* media queries with breakpoints 480 pixels ,768 pixels and 1260 pixels  */
+@media screen and (min-width: 769px) and (max-width: 1260px) {
+  .lamp-container {
+    width: 150px;
+  }
+
+  .lamp {
+    width: 100%;
+  }
+
+  .light {
+    width: 500px;
+  }
+
+  .text-container {
+    max-width: 500px;
+    margin-top: 12%;
+  }
+
+  .text-container h1 {
+    font-size: 35px;
+    font-weight: 400;
+  }
+
+  .text-container p {
+    font-size: 15px;
+  }
+
+  .text-container a {
+    padding: 14px 30px;
+    font-size: 15px;
+    margin-top: 25px;
+    border-radius: 30px;
+  }
+
+  .control {
+    margin-top: 110px;
+  }
+
+  .control .line {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 908px) {
+  .icon {
+    opacity: 1;
+  }
+
+  nav .menu-img {
+    width: 20px;
+    padding-bottom: 8px;
+  }
+
+  nav .logo {
+    width: 120px;
+    cursor: pointer;
+  }
+
+  nav {
+    display: block;
+    padding: 20px 5%;
+  }
+
+  nav ul {
+    flex: 1;
+    text-align: right;
+  }
+
+  ul {
+    display: none;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 20px 0;
+    transition: 0.3 ease;
+  }
+
+  button {
+    background-color: #efefef;
+    height: 25px;
+    width: 50px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    transition: background 0.5s, margin-left 0.5s;
+    margin-left: 270px;
+  }
+
+  button span {
+    display: block;
+    background: #999;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-left: 1px;
+  }
+
+  .togglebtn {
+    margin-left: 93%;
+  }
+
+  .lamp-container {
+    width: 100px;
+  }
+
+  .lamp {
+    width: 100%;
+  }
+
+  .light {
+    width: 500px;
+  }
+
+  .text-container {
+    margin-top: 5%;
+  }
+
+  .text-container h1 {
+    font-size: 34px;
+  }
+
+  .text-container p {
+    font-size: 15px;
+    max-width: 300px;
+  }
+
+  .text-container a {
+    padding: 14px 20px;
+    font-size: 12px;
+  }
+
+  .control {
+    margin-top: 80px;
+    margin-right: 50px;
+  }
+
+  .control .line {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .icon {
+    opacity: 1;
+    margin-top: 10px;
+  }
+
+  nav .menu-img {
+    width: 20px;
+    padding-bottom: 8px;
+  }
+
+  nav .logo {
+    width: 100px;
+    cursor: pointer;
+  }
+
+  nav {
+    display: block;
+    padding: 10px 5%;
+  }
+
+  nav ul {
+    flex: 1;
+    text-align: right;
+  }
+
+  ul {
+    display: none;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 20px 0;
+    transition: 0.1 ease;
+  }
+
+  button {
+    background-color: #efefef;
+    height: 25px;
+    width: 50px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    transition: background 0.5s, margin-left 0.5s;
+    margin-left: 270px;
+  }
+
+  button span {
+    display: block;
+    background: #999;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-left: 1px;
+  }
+
+  .togglebtn {
+    margin-left: 93%;
+  }
+
+  .lamp-container {
+    width: 100px;
+    margin-left: 30px;
+  }
+
+  .lamp {
+    width: 100%;
+  }
+
+  .light {
+    width: 400px;
+  }
+
+  .text-container {
+    margin-top: 25%;
+  }
+
+  .text-container h1 {
+    font-size: 25px;
+    margin-left: 20px;
+  }
+
+  .text-container p {
+    font-size: 12px;
+    max-width: 200px;
+    margin-left: 20px;
+  }
+
+  .text-container a {
+    padding: 10px 15px;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+  .control {
+    margin-top: 40px;
+    margin-right: 20px;
+  }
+  .togglebtn {
+    margin-top: 10px;
+    margin-left: 89%;
+  }
+}
