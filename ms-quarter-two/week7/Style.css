@@ -1,0 +1,59 @@
+.hero {
+  background-color: #1d2026;
+  min-height: 100vh;
+  width: 100%;
+  color: #000000;
+  position: relative;
+  text-align: center;
+}
+
+.hero h1 {
+  color: white;
+  padding-top: 50px;
+}
+
+.hero p,
+h2 {
+  color: black;
+}
+
+#resizable {
+  width: 50%;
+  height: 20%;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+#appearance,
+#habitat,
+#Diet,
+#Conservation {
+  background-color: gainsboro;
+  width: 300px;
+}
+
+.main-wrapper {
+  display: flex;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+
+#info {
+  position: absolute;
+  top: 10%;
+  left: 1%;
+  background-color: gainsboro;
+  border-radius: 50%;
+}
+
+#info p {
+  width: 200px;
+  height: 40px;
+  color: red;
+}
+
+span {
+  color: rgb(201, 55, 55);
+}

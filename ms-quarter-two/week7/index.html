@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- header tag -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- linking all jQuery CSS files -->
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet" href="jquery-ui-1.13.2/jquery-ui.css" />
+    <link rel="stylesheet" href="jquery-ui-1.13.2/jquery-ui.structure.css" />
+    <link rel="stylesheet" href="jquery-ui-1.13.2/jquery-ui.theme.css" />
+    <!-- title of the page -->
+    <title>My Favorite Animal: The Red Pandat</title>
+  </head>
+  <body class="hero">
+    <h1>My Favorite Animal: The <span>Red</span> Panda</h1>
+    <img
+      id="resizable"
+      src="4545928-animals-red-panda-nature-red.jpg"
+      alt="A photo of a red panda"
+    />
+    <div id="info">
+      <p>You can drag image</p>
+      <p>You can resize and drag all below tabs</p>
+    </div>
+    <div class="main-wrapper">
+      <div id="appearance">
+        <h2 id="head">Appearance</h2>
+        <p class="para">
+          The red panda is about the size of a house cat, with a body length of
+          20 to 26 inches and a tail length of 12 to 20 inches. Its fur is thick
+          and reddish-brown, with white markings on its face, belly, and legs.
+          Its bushy tail helps it balance on tree branches and keep warm in cold
+          weather.
+        </p>
+      </div>
+      <div id="habitat">
+        <h2 id="head1">Habitat</h2>
+        <p class="para1">
+          The red panda is about the size of a house cat, with a body length of
+          20 to 26 inches and a tail length of 12 to 20 inches. Its fur is thick
+          and reddish-brown, with white markings on its face, belly, and legs.
+          Its bushy tail helps it balance on tree branches and keep warm in cold
+          weather.
+        </p>
+        <p class="para1">
+          The red panda is classified as a vulnerable species by the
+          International Union for Conservation of Nature (IUCN), with a
+          population of less than 10,000 individuals in the wild. The main
+          threats to its survival are habitat loss and fragmentation, hunting,
+          and climate change.
+        </p>
+      </div>
+      <div id="Diet">
+        <h2 id="head2">Diet</h2>
+        <p class="para2">
+          The red panda is a cute and cuddly mammal native to the Himalayas and
+          southwestern China. It is known for its red fur, bushy tail, and
+          adorable face.
+        </p>
+        <p class="para2">
+          The red panda is primarily an herbivore, feeding on bamboo, fruits,
+          and berries. However, it will also eat small animals like birds and
+          insects if it needs to.
+        </p>
+      </div>
+      <div id="Conservation">
+        <h2 id="head3">Conservation</h2>
+        <p class="para3">
+          Red pandas live in the temperate forests of the Himalayas and
+          southwestern China, where they spend most of their time in trees. They
+          are solitary animals, except during mating season.
+        </p>
+        <p class="para3">
+          If you want to help protect the red panda and its habitat, consider
+          supporting organizations like the Red Panda Network, which works to
+          conserve red pandas and their habitat in Nepal and India.
+        </p>
+      </div>
+    </div>
+  </body>
+  <!-- linking jQuery js and jQuery-ui js files  -->
+  <script src="jquery-3.6.4.js"></script>
+  <script src="jquery-ui-1.13.2/jquery-ui.js"></script>
+  <!-- js code -->
+  <script>
+    $(".para").hide();
+    $("#head").click(function () {
+      $(".para").toggle();
+    });
+    $(".para1").hide();
+    $("#head1").click(function () {
+      $(".para1").toggle();
+    });
+    $(".para2").hide();
+    $("#head2").click(function () {
+      $(".para2").toggle();
+    });
+    $(".para3").hide();
+    $("#head3").click(function () {
+      $(".para3").toggle();
+    });
+    $("#resizable").draggable();
+    $("#appearance").draggable().resizable();
+    $("#habitat").draggable().resizable();
+    $("#Diet").draggable().resizable();
+    $("#Conservation").draggable().resizable();
+  </script>
+</html>
