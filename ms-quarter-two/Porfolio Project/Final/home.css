@@ -1,0 +1,1224 @@
+/* root css */
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+  list-style: none;
+  background-color: rgb(86, 82, 82);
+}
+/* page-wrapper class */
+.homePage-wrapper {
+  width: 1024px;
+  margin: 0 auto;
+  position: relative;
+  background-color: #ffffff;
+}
+/* home-page navbar css */
+.hamburger {
+  display: none;
+}
+.mobile-nav {
+  display: none;
+}
+
+#home_navbar {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 1024px;
+  height: 101px;
+  background: #ffffff;
+}
+
+#logo_Img {
+  width: 136px;
+  height: 101px;
+  overflow: visible;
+}
+
+#home_navbar ul {
+  background-color: white;
+  margin-top: 38px;
+}
+
+#home_navbar li {
+  display: inline;
+  padding: 10px 30px;
+  background-color: white;
+}
+
+#home_navbar a {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  background-color: white;
+}
+
+#bold {
+  font-weight: bold;
+  background-color: white;
+}
+
+/* section-1 taglines for restrobar */
+
+#info-img {
+  width: 100%;
+  height: auto;
+  opacity: 0.9;
+}
+
+.info-text {
+  position: absolute;
+  width: 597px;
+  height: 231px;
+  left: 209px;
+  top: 350px;
+  background-color: transparent;
+  text-align: center;
+}
+
+.info-text h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+  text-align: center;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.info-text p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 35px;
+  text-align: center;
+  background-color: transparent;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.order-btn {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+  width: 142px;
+  height: 39px;
+  background-color: #f3a333;
+  border-radius: 10px;
+  border: none;
+  margin-top: 20px;
+  line-height: 35px;
+}
+
+/* section2 welcome_info */
+
+.section2 {
+  width: 1024px;
+  height: 409px;
+  background-color: #819168;
+  margin-top: -5px;
+  background: #819168;
+}
+.section2_info {
+  position: absolute;
+  top: 930px;
+  left: 350px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  background: #819168;
+}
+
+/* Welcome 
+Welcome to Restrobar 
+Indulge in flavours, unwind in style */
+
+#welcome {
+  font-family: "Iceberg";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  color: #ffffff;
+  background: #819168;
+}
+
+#line2,
+#line3 {
+  font-family: "Iceberg";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  background: #819168;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.row1 {
+  height: 4px;
+  color: #f3a333;
+  width: 150px;
+  position: absolute;
+  top: 35px;
+  left: 30%;
+  background-color: #f3a333;
+  border-color: #f3a333;
+}
+
+/* section3 menu options breakfast, lunch and dinner, desserts */
+
+.nav {
+  box-sizing: border-box;
+  width: 1024px;
+  height: 101px;
+  background: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 40px;
+}
+
+.breakfast_section {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #ffffff;
+}
+.breakfast_img {
+  /* Breakfast img */
+  width: 350px;
+  height: 350px;
+}
+.breakfast_img:hover {
+  box-shadow: 0 0 2px 1px rgba(249, 0, 4, 0.5);
+}
+
+.breakfast_info {
+  width: 350px;
+  height: 350px;
+  text-align: center;
+  background-color: #ffffff;
+  mix-blend-mode: normal;
+  padding-top: 40px;
+}
+
+/* Breakfast-text */
+.breakfast_info h3 {
+  font-family: "Inder";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* American Brekfast */
+.breakfast_info h4 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+/* A small river named Duden flows by their place and supplies it with the necessary regelialia. */
+
+.breakfast_info h5 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 29px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.57);
+  background-color: #ffffff;
+  margin-top: 10px;
+}
+
+/* section4 restrobar's video*/
+
+.section4 {
+  text-align: center;
+  background-color: #ffffff;
+  padding-bottom: 30px;
+}
+
+#gif {
+  width: 836px;
+  height: 449px;
+  text-align: center;
+}
+
+/* footer-section */
+/* footer1 */
+
+.footer1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #819168;
+  height: 253px;
+  vertical-align: middle;
+}
+
+.left-side {
+  width: 350px;
+  align-items: center;
+  text-align: center;
+  background-color: #819168;
+}
+
+.left-side p,
+a {
+  /* Contact */
+  font-family: "Iceberg";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 24px;
+  color: #ffffff;
+  background-color: #819168;
+}
+
+/* 203 Fake St. Mountain View, San Francisco, California, USA */
+
+#address {
+  background-color: #819168;
+  color: #ffffff;
+  font-family: "Iceberg";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 20px;
+}
+
+/* +2 392 3929 210  */
+
+#phone_number {
+  background-color: #819168;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+#row2 {
+  height: 4px;
+  color: #f3a333;
+  width: 90px;
+  position: absolute;
+  top: 87.5%;
+  left: 30%;
+  background-color: #f3a333;
+  border-color: #f3a333;
+  margin-top: 8px;
+}
+
+.right-side {
+  background-color: #819168;
+}
+
+#footer_img {
+  /* Ellipse 1 */
+  width: 149.86px;
+  height: 141px;
+  border-radius: 50%;
+}
+
+/* footer2 */
+.footer2 {
+  /* Rectangle 5 */
+  height: 51px;
+  background: #dce3cf;
+}
+
+.footer2 p {
+  /* @2023 Restrobar */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #898989;
+  background-color: #dce3cf;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+@media (max-width> 1024px) {
+  .homePage-wrapper {
+    width: 1024px;
+  }
+
+  #home_navbar {
+    width: 1024px;
+    height: 101px;
+  }
+
+  #logo_Img {
+    width: 136px;
+    height: 101px;
+  }
+
+  #home_navbar a {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .info-text {
+    width: 597px;
+    height: 231px;
+  }
+
+  .info-text h2 {
+    font-size: 30px;
+    line-height: 39px;
+  }
+
+  .info-text p {
+    font-size: 18px;
+  }
+
+  .order-btn {
+    font-size: 16px;
+    width: 142px;
+    height: 39px;
+  }
+
+  /* section2 welcome_info */
+
+  .section2 {
+    width: 1024px;
+  }
+
+  /* Welcome 
+Welcome to Restrobar 
+Indulge in flavours, unwind in style */
+
+  #welcome {
+    font-size: 32px;
+  }
+
+  #line2,
+  #line3 {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+
+  .row1 {
+    height: 4px;
+    width: 150px;
+  }
+
+  /* section3 menu options breakfast, lunch and dinner, desserts */
+
+  .nav {
+    width: 1024px;
+    height: 101px;
+    font-size: 20px;
+  }
+
+  .breakfast_img {
+    /* Breakfast img */
+    width: 350px;
+    height: 350px;
+  }
+
+  .breakfast_info {
+    width: 350px;
+    height: 350px;
+  }
+
+  /* Breakfast-text */
+  .breakfast_info h3 {
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  /* American Brekfast */
+  .breakfast_info h4 {
+    font-size: 18px;
+    line-height: 50px;
+  }
+
+  /* A small river named Duden flows by their place and supplies it with the necessary regelialia. */
+
+  .breakfast_info h5 {
+    font-size: 16px;
+  }
+
+  /* section4 restrobar's video*/
+
+  #gif {
+    width: 836px;
+  }
+
+  /* footer-section */
+  /* footer1 */
+
+  .footer1 {
+    height: 253px;
+  }
+
+  .left-side {
+    width: 350px;
+  }
+
+  .left-side p,
+  a {
+    /* Contact */
+    font-size: 25px;
+    line-height: 24px;
+  }
+
+  /* 203 Fake St. Mountain View, San Francisco, California, USA */
+
+  #address {
+    font-size: 18px;
+  }
+
+  /* +2 392 3929 210  */
+
+  #phone_number {
+    font-size: 16px;
+  }
+
+  #row2 {
+    width: 90px;
+  }
+
+  #footer_img {
+    /* Ellipse 1 */
+    width: 149.86px;
+    height: 141px;
+  }
+
+  /* footer2 */
+
+  .footer2 p {
+    /* @2023 Restrobar */
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .homePage-wrapper {
+    width: 769px;
+  }
+
+  #home_navbar {
+    width: 769px;
+    height: 90px;
+  }
+
+  #logo_Img {
+    width: 112px;
+    height: 90px;
+  }
+
+  #home_navbar ul {
+    margin-top: 37px;
+  }
+
+  #home_navbar li {
+    padding: 10px 30px;
+  }
+
+  #home_navbar a {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  #info-img {
+    width: 100%;
+  }
+
+  .info-text {
+    width: 490px;
+    left: 150px;
+    top: 260px;
+  }
+
+  .info-text h2 {
+    font-size: 25px;
+  }
+
+  .info-text p {
+    font-size: 15px;
+  }
+
+  .order-btn {
+    font-size: 12px;
+    width: 130px;
+    height: 39px;
+  }
+
+  /* section2 welcome_info */
+
+  .section2 {
+    width: 769px;
+  }
+
+  .section2_info {
+    top: 750px;
+    left: 240px;
+  }
+
+  /* Welcome 
+Welcome to Restrobar 
+Indulge in flavours, unwind in style */
+
+  #welcome {
+    font-size: 25px;
+  }
+
+  #line2,
+  #line3 {
+    font-size: 20px;
+    margin-top: 18px;
+  }
+
+  .row1 {
+    height: 4px;
+    width: 120px;
+  }
+
+  /* section3 menu options breakfast, lunch and dinner, desserts */
+
+  .nav {
+    width: 769px;
+    font-size: 17px;
+  }
+
+  .breakfast_img {
+    /* Breakfast img */
+    width: 300px;
+    height: 300px;
+  }
+
+  .breakfast_info {
+    width: 300px;
+    height: 300px;
+  }
+
+  /* Breakfast-text */
+  .breakfast_info h3 {
+    font-size: 20px;
+  }
+
+  /* American Brekfast */
+  .breakfast_info h4 {
+    font-size: 15px;
+  }
+
+  /* A small river named Duden flows by their place and supplies it with the necessary regelialia. */
+
+  .breakfast_info h5 {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  /* section4 restrobar's video*/
+
+  .section4 {
+    padding-bottom: 30px;
+  }
+
+  #gif {
+    width: 769px;
+    height: 449px;
+    text-align: center;
+  }
+
+  /* footer-section */
+  /* footer1 */
+
+  .left-side {
+    width: 300px;
+  }
+
+  .left-side p,
+  a {
+    /* Contact */
+    font-size: 20px;
+  }
+
+  /* 203 Fake St. Mountain View, San Francisco, California, USA */
+
+  #address {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  /* +2 392 3929 210  */
+
+  #phone_number {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+
+  #row2 {
+    width: 80px;
+    top: 87.5%;
+    left: 28.5%;
+  }
+
+  #footer_img {
+    /* Ellipse 1 */
+    width: 140.86px;
+  }
+
+  /* footer2 */
+
+  .footer2 p {
+    /* @2023 Restrobar */
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .homePage-wrapper {
+    width: 481px;
+  }
+
+  #home_navbar {
+    width: 481px;
+    height: 90px;
+  }
+
+  #logo_Img {
+    width: 112px;
+    height: 90px;
+  }
+
+  #home_navbar ul {
+    display: none;
+  }
+
+  #home_navbar li {
+    padding: 10px 30px;
+  }
+
+  #home_navbar a {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  #info-img {
+    width: 100%;
+  }
+
+  .info-text {
+    width: 270px;
+    left: 100px;
+    top: 190px;
+  }
+
+  .info-text h2 {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .info-text p {
+    font-size: 10px;
+    line-height: 18px;
+    margin-top: 10px;
+  }
+
+  .order-btn {
+    font-size: 10px;
+    width: 80px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+  }
+
+  /* section2 welcome_info */
+
+  .section2 {
+    width: 481px;
+    height: 300px;
+  }
+
+  .section2_info {
+    top: 500px;
+    left: 130px;
+  }
+
+  /* Welcome 
+Welcome to Restrobar 
+Indulge in flavours, unwind in style */
+
+  #welcome {
+    font-size: 20px;
+  }
+
+  #line2,
+  #line3 {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .row1 {
+    height: 4px;
+    width: 90px;
+    top: 30px;
+  }
+
+  /* section3 menu options breakfast, lunch and dinner, desserts */
+
+  .nav {
+    width: 481px;
+    font-size: 17px;
+  }
+
+  .breakfast_img {
+    /* Breakfast img */
+    width: 200px;
+    height: 200px;
+  }
+
+  .breakfast_info {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* Breakfast-text */
+  .breakfast_info h3 {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  /* American Brekfast */
+  .breakfast_info h4 {
+    font-size: 12px;
+    line-height: 25px;
+  }
+
+  /* A small river named Duden flows by their place and supplies it with the necessary regelialia. */
+
+  .breakfast_info h5 {
+    font-size: 10px;
+    margin-top: 10px;
+    line-height: 15px;
+  }
+
+  /* section4 restrobar's video*/
+
+  .section4 {
+    padding-bottom: 30px;
+  }
+
+  #gif {
+    width: 481px;
+    height: 400px;
+    text-align: center;
+  }
+
+  /* footer-section */
+  /* footer1 */
+
+  .left-side {
+    width: 180px;
+  }
+
+  .left-side p,
+  a {
+    /* Contact */
+    font-size: 15px;
+  }
+
+  /* 203 Fake St. Mountain View, San Francisco, California, USA */
+
+  #address {
+    font-size: 12px;
+    margin-top: 12px;
+    line-height: 18px;
+  }
+
+  /* +2 392 3929 210  */
+
+  #phone_number {
+    font-size: 12px;
+    line-height: 10px;
+  }
+
+  #row2 {
+    width: 60px;
+    top: 89.5%;
+    left: 26.5%;
+  }
+
+  #footer_img {
+    /* Ellipse 1 */
+    width: 100px;
+    height: 100px;
+  }
+
+  /* footer2 */
+  .footer2 {
+    height: 25px;
+  }
+  .footer2 p {
+    /* @2023 Restrobar */
+    font-size: 8px;
+    padding-top: 7px;
+  }
+
+  .hamburger {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+    appearance: none;
+    background-color: none;
+    outline: none;
+    border: none;
+    margin-top: 32px;
+    margin-right: 20px;
+  }
+
+  .hamburger .bar,
+  .hamburger:after,
+  .hamburger:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    margin: 6px 0px;
+    transform: 0.4s;
+  }
+
+  .mobile-nav {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 481px;
+    min-height: 100vh;
+    z-index: 98;
+    background-color: #819168;
+    padding-top: 150px;
+    transition: 0.4s;
+    margin-top: 90px;
+    /* margin-left: 15%; */
+  }
+
+  .mobile-nav a {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 16px;
+    text-align: center;
+    padding: 12px 16px;
+    background: #819168;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+  }
+
+  .mobile-nav a:hover {
+    font-size: 20px;
+  }
+  .hamburger.is-active .bar {
+    opacity: 1;
+  }
+
+  .mobile-nav.is-active {
+    left: 0%;
+  }
+  .mobile-nav {
+    display: none;
+  }
+
+  .is-active {
+    display: block;
+  }
+
+  #bold1 {
+    font-weight: 900;
+  }
+}
+@media screen and (max-width: 480px) {
+  .homePage-wrapper {
+    width: 480px;
+  }
+
+  #home_navbar {
+    width: 480px;
+    height: 90px;
+  }
+
+  #logo_Img {
+    width: 112px;
+    height: 90px;
+  }
+
+  #home_navbar ul {
+    display: none;
+  }
+
+  #home_navbar li {
+    padding: 10px 30px;
+  }
+
+  #home_navbar a {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  #info-img {
+    width: 100%;
+  }
+
+  .info-text {
+    width: 270px;
+    left: 100px;
+    top: 190px;
+  }
+
+  .info-text h2 {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .info-text p {
+    font-size: 10px;
+    line-height: 18px;
+    margin-top: 10px;
+  }
+
+  .order-btn {
+    font-size: 10px;
+    width: 80px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+  }
+
+  /* section2 welcome_info */
+
+  .section2 {
+    width: 481px;
+    height: 300px;
+  }
+
+  .section2_info {
+    top: 500px;
+    left: 130px;
+  }
+
+  /* Welcome 
+Welcome to Restrobar 
+Indulge in flavours, unwind in style */
+
+  #welcome {
+    font-size: 20px;
+  }
+
+  #line2,
+  #line3 {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .row1 {
+    height: 4px;
+    width: 90px;
+    top: 30px;
+  }
+
+  /* section3 menu options breakfast, lunch and dinner, desserts */
+
+  .nav {
+    width: 481px;
+    font-size: 17px;
+  }
+
+  .breakfast_img {
+    /* Breakfast img */
+    width: 200px;
+    height: 200px;
+  }
+
+  .breakfast_info {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* Breakfast-text */
+  .breakfast_info h3 {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  /* American Brekfast */
+  .breakfast_info h4 {
+    font-size: 12px;
+    line-height: 25px;
+  }
+
+  /* A small river named Duden flows by their place and supplies it with the necessary regelialia. */
+
+  .breakfast_info h5 {
+    font-size: 10px;
+    margin-top: 10px;
+    line-height: 15px;
+  }
+
+  /* section4 restrobar's video*/
+
+  .section4 {
+    padding-bottom: 30px;
+  }
+
+  #gif {
+    width: 481px;
+    height: 400px;
+    text-align: center;
+  }
+
+  /* footer-section */
+  /* footer1 */
+
+  .left-side {
+    width: 180px;
+  }
+
+  .left-side p,
+  a {
+    /* Contact */
+    font-size: 15px;
+  }
+
+  /* 203 Fake St. Mountain View, San Francisco, California, USA */
+
+  #address {
+    font-size: 12px;
+    margin-top: 12px;
+    line-height: 18px;
+  }
+
+  /* +2 392 3929 210  */
+
+  #phone_number {
+    font-size: 12px;
+    line-height: 10px;
+  }
+
+  #row2 {
+    width: 60px;
+    top: 89.5%;
+    left: 27%;
+  }
+
+  #footer_img {
+    /* Ellipse 1 */
+    width: 100px;
+    height: 100px;
+  }
+
+  /* footer2 */
+  .footer2 {
+    height: 25px;
+  }
+  .footer2 p {
+    /* @2023 Restrobar */
+    font-size: 8px;
+    padding-top: 7px;
+  }
+
+  .hamburger {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+    appearance: none;
+    background-color: none;
+    outline: none;
+    border: none;
+    margin-top: 32px;
+    margin-right: 20px;
+  }
+
+  .hamburger .bar,
+  .hamburger:after,
+  .hamburger:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    margin: 6px 0px;
+    transform: 0.4s;
+  }
+  .mobile-nav {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 480px;
+    min-height: 100vh;
+    z-index: 98;
+    background-color: #819168;
+    padding-top: 150px;
+    transition: 0.4s;
+    margin-top: 90px;
+    /* margin-left: 15%; */
+  }
+
+  .mobile-nav a {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 16px;
+    text-align: center;
+    padding: 12px 16px;
+    background: #819168;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+  }
+
+  .mobile-nav a:hover {
+    font-size: 20px;
+  }
+  .hamburger.is-active .bar {
+    opacity: 1;
+  }
+
+  .mobile-nav.is-active {
+    left: 0%;
+  }
+  .mobile-nav {
+    display: none;
+  }
+
+  .is-active {
+    display: block;
+  }
+
+  #bold1 {
+    font-weight: 900;
+  }
+}

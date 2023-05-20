@@ -1,0 +1,133 @@
+/* fot large screen and lapto size */
+/* @media screen >1024px */
+.bottom_line {
+  border-top: 1px solid rgb(194, 193, 193);
+}
+
+.images-container,
+.images-container2,
+.images-container3 {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  background-color: white;
+  justify-content: space-evenly;
+}
+
+/* img css */
+
+.card {
+  width: 250px;
+  height: 250px;
+  background-color: green;
+  font-size: 2.5em;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0px 47px;
+  justify-content: space-around;
+}
+
+/* adjusting viewport for horizontal screen carousel */
+.view-port {
+  background-color: transparent;
+  width: 1024px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 250px;
+  height: 250px;
+  object-fit: fill;
+}
+
+.menu-title {
+  font-family: "Iceberg";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+  background-color: white;
+}
+
+.section-breakfaast {
+  background-color: white;
+}
+
+.section-lunch {
+  background-color: white;
+}
+
+.section-dessert {
+  background-color: white;
+}
+
+.btns {
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+}
+
+#next,
+#next2,
+#next3,
+#previous,
+#previous2,
+#previous3 {
+  padding: 5px 15px;
+  background-color: #819168;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+/* laptop size */
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .card {
+    width: 285px;
+    height: 250px;
+    margin: 0px 32px;
+  }
+  .view-port {
+    width: 769px;
+  }
+  .card img {
+    width: 285px;
+    height: 250px;
+  }
+}
+/* tab screen */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .card {
+    width: 285px;
+    height: 250px;
+    margin: 0px 35px;
+  }
+  .view-port {
+    width: 481px;
+    justify-content: center;
+  }
+  .card img {
+    width: 285px;
+    height: 250px;
+  }
+}
+
+/* mobile screen */
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: 285px;
+    height: 250px;
+    margin: 0px 35px;
+  }
+  .view-port {
+    width: 481px;
+    justify-content: center;
+  }
+  .card img {
+    width: 285px;
+    height: 250px;
+  }
+}

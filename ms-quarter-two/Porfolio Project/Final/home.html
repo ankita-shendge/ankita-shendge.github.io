@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css file linked -->
+    <link rel="stylesheet" href="home.css" />
+    <!-- jquery file linked -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- title -->
+    <title>Restrobar-Home</title>
+    <!-- fontawesome-API for icons -->
+    <script
+      src="https://kit.fontawesome.com/840d1e77bc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="homePage-wrapper">
+      <!-- mobile nabvbar -->
+      <nav class="mobile-nav">
+        <a id="bold1" href="#home">Home</a>
+        <a href="Menu.html">Menu</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <!-- large-screen navbar -->
+      <nav id="home_navbar">
+        <div>
+          <img id="logo_Img" src="Images/logo.png" alt="logo" />
+        </div>
+        <ul>
+          <li>
+            <a href="#home"><span id="bold">Home</span> </a>
+          </li>
+          <li><a href="Menu.html">Menu</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="hamburger">
+          <div class="bar"></div>
+        </button>
+      </nav>
+      <!-- section1 restrobar's info -->
+      <section class="section1">
+        <div>
+          <img id="info-img" src="Images/background.png" alt="" />
+        </div>
+        <div class="info-text">
+          <h2>We Serve Healthy & Delicious Foods</h2>
+          <p>
+            A small river named Duden flows by their place and supplies it with
+            the necessary regelialia. It is a paradisematic country, in which
+            roasted parts of sentences fly into your mouth.
+          </p>
+          <button type="button" id="#menu" class="order-btn">Order Now</button>
+        </div>
+      </section>
+      <!-- section welcome -->
+      <div class="section2">
+        <div class="section2_info">
+          <p id="welcome">Welcome</p>
+          <p id="line2">Welcome to Restrobar</p>
+          <p id="line3">Indulge in Flavours, Unwind in Style</p>
+          <hr class="row1" />
+        </div>
+      </div>
+      <!-- section menu -->
+      <section class="section3">
+        <nav class="nav">Menu</nav>
+        <div class="breakfast_section">
+          <img
+            class="breakfast_img"
+            src="Images/Breakfast/istockphoto-533645537-170667a.jpg"
+            alt=""
+          />
+          <div class="breakfast_info">
+            <h3>Breakfast</h3>
+            <h4>American Breakfast</h4>
+            <h5>
+              A small river named Duden flows by their place and supplies it
+              with the necessary regelialia.
+            </h5>
+          </div>
+        </div>
+        <div class="breakfast_section">
+          <div class="breakfast_info lunch">
+            <h3>Lunch & Dinner</h3>
+            <h4>Pizza’s & Pasta’s</h4>
+            <h5>
+              A small river named Duden flows by their place and supplies it
+              with the necessary regelialia.
+            </h5>
+          </div>
+          <img
+            class="breakfast_img"
+            src="Images/Lunch/HD-wallpaper-pizza-food-veg-eat.jpg"
+            alt=""
+          />
+        </div>
+        <div class="breakfast_section">
+          <img
+            class="breakfast_img"
+            src="Images/Desserts/dessert-wallpaper-3.jpg"
+            alt=""
+          />
+          <div class="breakfast_info">
+            <h3>Dessert</h3>
+            <h4>Ice-cream & Cake’s</h4>
+            <h5>
+              A small river named Duden flows by their place and supplies it
+              with the necessary regelialia.
+            </h5>
+          </div>
+        </div>
+      </section>
+      <!-- section blog -->
+      <div class="section4">
+        <nav class="nav">Watch Our Gif</nav>
+        <embed
+          id="gif"
+          src="https://media.gettyimages.com/id/857947444/video/zoom-out-of-chef-decorating-his-plate-and-looking-very-happy.mp4?s=mp4-640x640-gi&k=20&c=Hzg9cwCkzIvcKRLLi7H-hrAtnDzempl57p_rjJQZc2o="
+        />
+      </div>
+      <!-- section footer -->
+      <footer class="footer1">
+        <div class="left-side">
+          <p><a id="#contact">Contact</a></p>
+          <address id="address">
+            203 Fake St. Mountain View, San Francisco, California, USA
+          </address>
+          <h5 id="phone_number">+2 392 3929 210</h5>
+        </div>
+        <div class="right-side">
+          <img id="footer_img" src="Images/logo.png" alt="" />
+        </div>
+        <hr id="row2" />
+      </footer>
+      <footer class="footer2">
+        <p>@2023 Restrobar</p>
+      </footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
