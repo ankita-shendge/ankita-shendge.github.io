@@ -131,3 +131,132 @@
     height: 250px;
   }
 }
+
+/* @media (max-width> 1024px) {
+  .homePage-wrapper {
+    width: 1024px;
+  }
+
+  #home_navbar {
+    width: 1024px;
+    height: 101px;
+  }
+
+  #logo_Img {
+    width: 136px;
+    height: 101px;
+  }
+
+  #home_navbar a {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .info-text {
+    width: 597px;
+    height: 231px;
+  }
+
+  .info-text h2 {
+    font-size: 30px;
+    line-height: 39px;
+  }
+
+  .info-text p {
+    font-size: 18px;
+  }
+
+  .order-btn {
+    font-size: 16px;
+    width: 142px;
+    height: 39px;
+  }
+
+  .section2 {
+    width: 1024px;
+  }
+
+  #welcome {
+    font-size: 32px;
+  }
+
+  #line2,
+  #line3 {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+
+  .row1 {
+    height: 4px;
+    width: 150px;
+  }
+
+  .nav {
+    width: 1024px;
+    height: 101px;
+    font-size: 20px;
+  }
+
+  .breakfast_img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .breakfast_info {
+    width: 350px;
+    height: 350px;
+  }
+
+  .breakfast_info h3 {
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  .breakfast_info h4 {
+    font-size: 18px;
+    line-height: 50px;
+  }
+
+  .breakfast_info h5 {
+    font-size: 16px;
+  }
+
+  #gif {
+    width: 836px;
+  }
+
+  .footer1 {
+    height: 253px;
+  }
+
+  .left-side {
+    width: 350px;
+  }
+
+  .left-side p,
+  a {
+    font-size: 25px;
+    line-height: 24px;
+  }
+
+  #address {
+    font-size: 18px;
+  }
+
+  #phone_number {
+    font-size: 16px;
+  }
+
+  #row2 {
+    width: 90px;
+  }
+
+  #footer_img {
+    width: 149.86px;
+    height: 141px;
+  }
+
+  .footer2 p {
+    font-size: 12px;
+  }
+} */

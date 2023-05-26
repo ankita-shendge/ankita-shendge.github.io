@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Js Example</title>
+  </head>
+  <style>
+    #click {
+      background-color: rgb(211, 211, 150);
+      color: black;
+      padding: 10px 15px;
+      border: none;
+    }
+
+    #card {
+      width: 400px;
+      text-align: center;
+      margin: 30px;
+      border: 1px solid black;
+      padding: 30px;
+      background-color: gainsboro;
+      border-radius: 10px;
+      display: none;
+    }
+
+    #card img {
+      width: 350px;
+    }
+
+    #card h1 {
+      color: brown;
+    }
+
+    #card h2 {
+      color: rgb(88, 30, 30);
+    }
+    #card.show {
+      display: block;
+    }
+  </style>
+  <body>
+    <button id="click">Click Me!</button>
+    <div id="card">
+      <img src="1537945821phpex2qS5.jpeg" alt="" />
+      <h1>Denver University</h1>
+      <h2>
+        The University of Denver was founded in 1864, making it the oldest
+        independent private university in the Rocky Mountain region.
+      </h2>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const clickme = document.getElementById("click");
+    const card = document.getElementById("card");
+
+    clickme.addEventListener("click", function () {
+      card.classList.toggle("show");
+    });
+  </script>
+</html>
