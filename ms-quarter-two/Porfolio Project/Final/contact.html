@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="Menu.css" />
+    <link rel="stylesheet" href="blog.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <title>Restrobar-Blog</title>
+    <title>Restrobar-Contact</title>
+  </head>
+  <body>
+    <div class="homePage-wrapper">
+      <nav class="mobile-nav">
+        <a href="home.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="blog.html">Blog</a>
+        <a id="bold" href="contact.html"><span id="bold_mob">Contact</span></a>
+      </nav>
+      <!-- large-screen navbar -->
+      <nav id="home_navbar">
+        <div>
+          <img id="logo_Img" src="Images/logo.png" alt="logo" />
+        </div>
+        <ul>
+          <li>
+            <a href="home.html">Home</a>
+          </li>
+          <li>
+            <a href="menu.html">Menu</a>
+          </li>
+          <li><a href="blog.html">Blog</a></li>
+          <li>
+            <a href="contact.html"><span id="bold_large">Contact</span></a>
+          </li>
+        </ul>
+        <button class="hamburger">
+          <div class="bar"></div>
+        </button>
+      </nav>
+      <!-- section 2 heathly img  -->
+      <div class="healthy_img">
+        <img src="Images/Locations/1600w-z3P6EppqrAg.webp" />
+        <button class="order-now">Order Now</button>
+      </div>
+      <!-- section 3 Locations and card locations -->
+      <nav class="nav">Location</nav>
+      <div class="card-wrapper">
+        <div class="flex">
+          <div class="location_card">
+            <img
+              class="location_img"
+              src="Images/Locations/istockphoto-1324813226-612x612.jpg"
+              alt=""
+            />
+            <p class="location_info fremont">Fremont</p>
+          </div>
+          <div class="location_card">
+            <img
+              class="location_img"
+              src="Images/Locations/istockphoto-1324813226-612x612.jpg"
+              alt=""
+            />
+            <p class="location_info milpitas">Milpitas</p>
+          </div>
+        </div>
+        <div class="flex">
+          <div class="location_card">
+            <img
+              class="location_img"
+              src="Images/Locations/istockphoto-1324813226-612x612.jpg"
+              alt=""
+            />
+            <p class="location_info sunnyvale">Sunnyvale</p>
+          </div>
+          <div class="location_card">
+            <img
+              class="location_img"
+              src="Images/Locations/istockphoto-1324813226-612x612.jpg"
+              alt=""
+            />
+            <p class="location_info mountain-view">Mountain-view</p>
+          </div>
+        </div>
+      </div>
+      <!-- section footer -->
+      <footer class="footer1">
+        <div class="left-side">
+          <p><a id="#contact">Contact</a></p>
+          <address id="address">
+            203 Fake St. Mountain View, San Francisco, California, USA
+          </address>
+          <h5 id="phone_number">+2 392 3929 210</h5>
+        </div>
+        <div class="right-side">
+          <img id="footer_img" src="Images/logo.png" alt="" />
+        </div>
+        <hr id="row2" />
+      </footer>
+      <footer class="footer2">
+        <p>@2023 Restrobar</p>
+      </footer>
+    </div>
+  </body>
+  <!-- js file added -->
+  <script src="app.js"></script>
+</html>

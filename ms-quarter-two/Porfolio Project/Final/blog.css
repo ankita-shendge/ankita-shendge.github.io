@@ -1,0 +1,168 @@
+.bottom_line {
+  border-top: 1px solid rgb(194, 193, 193);
+}
+.section4 {
+  padding-bottom: 0px;
+}
+
+/* Jems Tuff Head Chief I started cooking professionally because I had hit a point in my life where I was just sort of lost and cooking was something I had always loved and so I grabbed onto it. */
+
+.chief_column {
+  margin-bottom: 30px;
+}
+.chief1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  color: #000000;
+  display: flex;
+  justify-content: space-evenly;
+  width: 1024px;
+}
+
+.chief_info {
+  width: 380px;
+  height: 300px;
+  background-color: white;
+  padding-top: 60px;
+}
+
+.chief_name {
+  font-size: 20px;
+  background-color: white;
+}
+
+.position {
+  font-size: 18px;
+  color: #f3a333;
+  line-height: 49px;
+  background-color: white;
+}
+
+.chief_discription {
+  font-size: 15px;
+  line-height: 20px;
+  color: #6b5f5f;
+  background-color: white;
+  padding: 0px 20px;
+}
+
+.chief_img {
+  background-color: white;
+}
+.chief_img img {
+  width: 350px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+#row2 {
+  top: 87%;
+  left: 30%;
+}
+
+/* tab screen */
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .chief1 {
+    width: 769px;
+  }
+  #row2 {
+    top: 87%;
+    left: 29%;
+  }
+  .chief_name {
+    font-size: 18px;
+  }
+  .position {
+    font-size: 15px;
+  }
+  .chief_discription {
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0px 22px;
+  }
+  .chief_info {
+    width: 310px;
+    height: 300px;
+    background-color: white;
+    padding-top: 60px;
+  }
+  .chief_img img {
+    width: 310px;
+    height: 280px;
+    border-radius: 50%;
+  }
+}
+/* mobile screen */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .chief1 {
+    width: 481px;
+  }
+  #row2 {
+    top: 87%;
+    left: 27%;
+  }
+  .chief_name {
+    font-size: 18px;
+    line-height: 15px;
+  }
+  .position {
+    font-size: 12px;
+    line-height: 30px;
+  }
+  .chief_discription {
+    font-size: 10px;
+    line-height: 15px;
+    padding: 0px 22px;
+  }
+  .chief_info {
+    width: 250px;
+    height: 150px;
+    background-color: white;
+    padding-top: 20px;
+  }
+  .chief_img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+}
+/* mobile-screen */
+
+@media screen and (max-width: 480px) {
+  .chief1 {
+    width: 481px;
+  }
+  #row2 {
+    top: 87%;
+    left: 27%;
+  }
+  .chief_name {
+    font-size: 18px;
+    line-height: 15px;
+  }
+  .position {
+    font-size: 12px;
+    line-height: 30px;
+  }
+  .chief_discription {
+    font-size: 10px;
+    line-height: 15px;
+    padding: 0px 22px;
+  }
+  .chief_info {
+    width: 250px;
+    height: 150px;
+    background-color: white;
+    padding-top: 20px;
+  }
+  .chief_img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,248 @@
+.healthy_img img {
+  width: 1024px;
+}
+/* Order Now Button */
+.order-now {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  border: none;
+  position: absolute;
+  right: 50px;
+  top: 102px;
+  padding: 15px;
+  background: #f3a333;
+  border-radius: 10px;
+  width: 130px;
+  height: 19px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+}
+/* cards css */
+.card-wrapper {
+  position: relative;
+}
+.nav {
+  margin-top: -4px;
+  border-top: 1px solid rgb(201, 223, 201);
+}
+
+.location_card img {
+  /* Fremont-location */
+  width: 258.86px;
+  height: 249.01px;
+  left: 62px;
+  top: 691px;
+  opacity: 0.4;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40px 30px;
+  background-color: #ffffff;
+}
+
+.location_info {
+  font-family: "Iceberg";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 39px;
+  text-align: center;
+  color: #bcf407;
+  background-color: transparent;
+}
+
+.location_info:hover {
+  font-size: 30px;
+}
+
+.fremont {
+  position: absolute;
+  left: 263px;
+  top: 100px;
+}
+
+.milpitas {
+  position: absolute;
+  left: 670px;
+  top: 100px;
+}
+
+.sunnyvale {
+  position: absolute;
+  left: 255px;
+  top: 420px;
+}
+
+.mountain-view {
+  position: absolute;
+  left: 630px;
+  top: 420px;
+}
+/* laptop screen */
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .healthy_img img {
+    width: 769px;
+  }
+
+  .fremont {
+    position: absolute;
+    left: 180px;
+    top: 100px;
+  }
+
+  .milpitas {
+    position: absolute;
+    left: 510px;
+    top: 100px;
+  }
+
+  .sunnyvale {
+    position: absolute;
+    left: 180px;
+    top: 420px;
+  }
+
+  .mountain-view {
+    position: absolute;
+    left: 470px;
+    top: 420px;
+  }
+
+  #row2 {
+    top: 86%;
+    left: 29%;
+  }
+}
+/* tab screen */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .healthy_img img {
+    width: 481px;
+  }
+  /* Order Now Button */
+  .order-now {
+    right: 50px;
+    top: 102px;
+    padding: 15px 20px;
+    width: 100px;
+    height: 19px;
+    font-size: 10px;
+  }
+
+  .nav {
+    border-bottom: 1px solid rgb(201, 223, 201);
+  }
+
+  .location_card img {
+    /* Fremont-location */
+    width: 150px;
+    height: 150px;
+  }
+
+  .location_info {
+    font-size: 20px;
+    line-height: 39px;
+  }
+
+  .location_info:hover {
+    font-size: 22px;
+  }
+  .fremont {
+    position: absolute;
+    left: 115px;
+    top: 76px;
+  }
+
+  .milpitas {
+    position: absolute;
+    left: 307px;
+    top: 76px;
+  }
+
+  .sunnyvale {
+    position: absolute;
+    left: 110px;
+    top: 300px;
+  }
+
+  .mountain-view {
+    position: absolute;
+    left: 275px;
+    top: 300px;
+  }
+  #row2 {
+    top: 84.8%;
+    left: 27%;
+  }
+}
+/* mobile screen */
+@media screen and (max-width: 480px) {
+  .healthy_img img {
+    width: 481px;
+  }
+  /* Order Now Button */
+  .order-now {
+    right: 50px;
+    top: 102px;
+    padding: 15px 20px;
+    width: 100px;
+    height: 19px;
+    font-size: 10px;
+  }
+
+  .nav {
+    border-bottom: 1px solid rgb(201, 223, 201);
+  }
+
+  .location_card img {
+    /* Fremont-location */
+    width: 150px;
+    height: 150px;
+  }
+
+  .location_info {
+    font-size: 20px;
+    line-height: 39px;
+  }
+
+  .location_info:hover {
+    font-size: 22px;
+  }
+  .fremont {
+    position: absolute;
+    left: 115px;
+    top: 76px;
+  }
+
+  .milpitas {
+    position: absolute;
+    left: 307px;
+    top: 76px;
+  }
+
+  .sunnyvale {
+    position: absolute;
+    left: 110px;
+    top: 300px;
+  }
+
+  .mountain-view {
+    position: absolute;
+    left: 275px;
+    top: 300px;
+  }
+  #row2 {
+    top: 84.8%;
+    left: 27%;
+  }
+}
