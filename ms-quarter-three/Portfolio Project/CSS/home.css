@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Spline+Sans+Mono:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: "Spline Sans", sans-serif;
+
+  color: #777;
+  line-height: 1.7;
+}
+/* Navbar */
+.title-img {
+  height: 100px;
+  width: 200px;
+}
+
+.text-yellow {
+  color: #c6b21c;
+  font-weight: 500;
+}
+.toggle-btn {
+  border: 1px solid #c6b21c;
+  background-color: #c6b21c;
+}
+/* Carousal */
+
+.text-yellow:hover {
+  color: #c0ba85;
+}
+
+.btn {
+  padding: 3px 15px;
+  border: 1px solid #c6b21c;
+}
+
+.btn-brand {
+  background-color: #c6b21c;
+  border: none;
+  font-size: 1.2em;
+}
+
+.slide-1 {
+  background: linear-gradient(#1a191953, #1a19197d),
+    url(../Images/Lunch/All-American-Hamburgers_EXPS_CWAS22_29321_P2_MD_04_19_1b_v2.jpg);
+}
+
+.slide-2 {
+  background: linear-gradient(#1a191953, #1a19197d),
+    url(../Images/Lunch/138469.jpg);
+}
+
+.bg-cover {
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+#heroSlider::after,
+#heroSlider::before {
+  content: " ";
+  width: 30px;
+  height: 4px;
+  background: white;
+  display: inline-block;
+  margin: 10px;
+  vertical-align: middle;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 40px;
+  height: 70px;
+  margin: auto;
+}
+
+/* About */
+
+img {
+  width: 100%;
+}
+section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+#about .divider {
+  width: 80px;
+  height: 2px;
+  display: block;
+  background-color: #c6b21c;
+}
+
+.about_info {
+  color: rgb(208, 208, 208);
+  vertical-align: middle;
+}
+
+@media (max-width: 992px) {
+  .about-info {
+    margin: 20px 40px;
+  }
+}
+
+@media (max-width: 3840px) and (min-width: 992px) {
+  .about_info {
+    margin-left: 80px;
+    vertical-align: middle;
+  }
+}
+
+/* Menu */
+
+.intro-text {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.intro-text p {
+  max-width: 500px;
+  margin: 16px auto 0 auto;
+}
+
+#menu {
+  background-color: #b49f03eb;
+  background: linear-gradient(#d5bd06eb, #a39529bd);
+}
+
+.nav-item .btn-menu {
+  color: #bca704;
+  box-shadow: 0 10px 40px rgba(46, 45, 45, 0.65);
+  border-radius: 10px;
+}
+
+/* Card Menu Items */
+
+.shadow-on-hover {
+  transition: all 0.4s;
+}
+
+.shadow-on-hover:hover {
+  box-shadow: 0 10px 40px rgba(251, 247, 247, 0.6);
+}
+
+.radius-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: none;
+}
+.radius-bottom {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.star-icon {
+  color: #dd3c3c;
+}
+
+.menu-name {
+  color: #bca704;
+}
+
+.menu-discription {
+  color: #e6de99bd;
+  font-style: italic;
+}
+
+.btn-menu:hover {
+  color: #c0ba85;
+}

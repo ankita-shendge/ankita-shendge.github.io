@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/CSS/home.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <div class="text-center">
+            <img
+              src="/Images/Logo/62792624bb132b96e73ee349.png"
+              class="rounded title-img"
+              alt="..."
+            />
+          </div>
+        </a>
+        <button
+          class="navbar-toggler toggle-btn"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto fs-5">
+            <li class="nav-item m-1">
+              <a
+                class="nav-link text-yellow text-end"
+                aria-current="page"
+                href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item m-1">
+              <a class="nav-link text-yellow text-end" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item m-1">
+              <a class="nav-link text-yellow text-end" href="#about">About</a>
+            </li>
+          </ul>
+          <!-- <a href="#" class="btn btn-lg text-yellow">Login</a> -->
+        </div>
+      </div>
+    </nav>
+    <!-- Carousel -->
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item text-center vh-100 active slide-1 bg-cover">
+          <div
+            class="container h-100 d-flex align-items-center justify-content-center"
+          >
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <h5 class="text-light fw-light" id="heroSlider">
+                  Welcome to Pacifica
+                </h5>
+                <h1 class="display-1 text-light fw-medium">
+                  Feast Your Senses Here!
+                </h1>
+                <a href="#" class="btn btn-lg btn-brand">Order Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item text-center vh-100 slide-2 bg-cover">
+          <div
+            class="container h-100 d-flex align-items-center justify-content-center"
+          >
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <h5 class="text-light fw-light" id="heroSlider">
+                  Welcome to Pacifica
+                </h5>
+                <h1 class="display-1 text-light fw-medium">
+                  Culinary Bliss Awaits You!
+                </h1>
+                <a href="#" class="btn btn-lg btn-brand">Order Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- About-->
+    <section id="about" class="bg-dark">
+      <div class="container">
+        <div class="row align-content-center">
+          <div class="col-lg-5">
+            <img
+            src="/Images/Chief/William_Orpen_Le_Chef_de_l'Hôtel_Chatham,_Paris.jpg"
+          </div>
+        </div>
+        <div class="col-lg-5 justify-content-center my-4 about_info">
+          <h1>About Us</h1>
+          <div class="divider my-4"></div>
+          <p class="my-4">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt,
+            ipsa at! Dolores doloribus laudantium non reiciendis.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem odit
+            optio error qui, ipsa harum placeat earum unde sequi sunt,
+            voluptatem reiciendis.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem odit
+            optio error qui, ipsa harum placeat earum unde sequi sunt,
+            voluptatem reiciendis.
+          </p>
+          <a href="#" class="btn btn-brand">Explore Menu</a>
+        </div>
+      </div>
+    </section>
+    <!-- Menu -->
+    <section id="menu">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 intro-text">
+            <h1 class="text-dark">Explore our Menu</h1>
+            <p class="text-dark">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+              itaque voluptatibus doloribus sed ut blanditiis id?
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <ul
+          class="nav nav-pills mb-3 justify-content-center"
+          id="pills-tab"
+          role="tablist"
+        >
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link bg-dark active mx-2 btn-menu"
+              id="pills-breakfast-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-breakfast"
+              type="button"
+              role="tab"
+              aria-controls="pills-breakfast"
+              aria-selected="true"
+            >
+              Breakfast
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link bg-dark mx-2 btn-menu"
+              id="pills-lunch-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-lunch"
+              type="button"
+              role="tab"
+              aria-controls="pills-lunch"
+              aria-selected="false"
+            >
+              Lunch
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link bg-dark mx-2 btn-menu"
+              id="pills-dinner-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-dinner"
+              type="button"
+              role="tab"
+              aria-controls="pills-dinner"
+              aria-selected="false"
+            >
+              Dinner
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link bg-dark mx-2 btn-menu"
+              id="pills-dessert-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-dessert"
+              type="button"
+              role="tab"
+              aria-controls="pills-dessert"
+              aria-selected="false"
+            >
+              Dessert
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="pills-breakfast"
+            role="tabpanel"
+            aria-labelledby="pills-home-tab"
+            tabindex="0"
+          >
+            <div class="h4 my-5 text-center text-dark">
+              Delicious Breakfast Options
+            </div>
+            <div class="row gy-4">
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item radius-bottom shadow-on-hover">
+                  <img
+                    class="radius-top img-fluid"
+                    src="/Images/Breakfast/461573.jpg"
+                    alt=""
+                  />
+                  <div class="menu-item-content p-4 bg-dark radius-bottom">
+                    <div>
+                      <span>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-half-fill star-icon"></i>
+                      </span>
+
+                      <h5 class="mt-2 mb-3 menu-name">Eggs Florentine</h5>
+                      <p class="small menu-discription">
+                        Eggs served atop a bed of sautéed spinach, typically
+                        topped with hollandaise sauce, offering a delightful
+                        combination of flavors and textures...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item radius-bottom shadow-on-hover">
+                  <img
+                    class="radius-top img-fluid"
+                    src="/Images/Breakfast/5375.jpg_wh860.jpg"
+                    alt=""
+                  />
+                  <div class="menu-item-content p-4 bg-dark radius-bottom">
+                    <div>
+                      <span>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-half-fill star-icon"></i>
+                      </span>
+
+                      <h5 class="mt-2 mb-3 menu-name">Croque Madame</h5>
+                      <p class="small menu-discription">
+                        Eggs served atop a bed of sautéed spinach, typically
+                        topped with hollandaise sauce, offering a delightful
+                        combination of flavors and textures...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item radius-bottom shadow-on-hover">
+                  <img
+                    class="radius-top img-fluid"
+                    src="/Images/Breakfast/healthy-breakfast-yogurt-granola-berries-bowl-44442559.jpg"
+                    alt=""
+                  />
+                  <div class="menu-item-content p-4 bg-dark radius-bottom">
+                    <div>
+                      <span>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-half-fill star-icon"></i>
+                      </span>
+
+                      <h5 class="mt-2 mb-3 menu-name">Cereal with Milk</h5>
+                      <p class="small menu-discription">
+                        Eggs served atop a bed of sautéed spinach, typically
+                        topped with hollandaise sauce, offering a delightful
+                        combination of flavors and textures...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item radius-bottom shadow-on-hover">
+                  <img
+                    class="radius-top img-fluid"
+                    src="/Images/Breakfast/istockphoto-533645537-170667a.jpg"
+                    alt=""
+                  />
+                  <div class="menu-item-content bg-dark p-4 radius-bottom">
+                    <div>
+                      <span>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-half-fill star-icon"></i>
+                      </span>
+
+                      <h5 class="mt-2 mb-3 menu-name">Pan Cakes</h5>
+                      <p class="small menu-discription">
+                        Eggs served atop a bed of sautéed spinach, typically
+                        topped with hollandaise sauce, offering a delightful
+                        combination of flavors and textures...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade show"
+            id="pills-lunch"
+            role="tabpanel"
+            aria-labelledby="pills-home-tab"
+            tabindex="0"
+          >
+            <div class="h4 my-5 text-center text-dark">
+              Delicious Lunch Options
+            </div>
+            <div class="row gy-4">
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item radius-bottom shadow-on-hover">
+                  <img
+                    class="radius-top img-fluid"
+                    src="/Images/Lunch/138469.jpg"
+                    alt=""
+                  />
+                  <div class="menu-item-content p-4 bg-dark radius-bottom">
+                    <div>
+                      <span>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-half-fill star-icon"></i>
+                      </span>
+
+                      <h5 class="mt-2 mb-3 menu-name">Grilled Chicken Salad</h5>
+                      <p class="small menu-discription">
+                        Eggs served atop a bed of sautéed spinach, typically
+                        topped with hollandaise sauce, offering a delightful
+                        combination of flavors and textures...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item radius-bottom shadow-on-hover">
+                  <img
+                    class="radius-top img-fluid"
+                    src="/Images/Lunch/596343.jpg"
+                    alt=""
+                  />
+                  <div class="menu-item-content p-4 bg-dark radius-bottom">
+                    <div>
+                      <span>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-half-fill star-icon"></i>
+                      </span>
+
+                      <h5 class="mt-2 mb-3 menu-name">Margherita Pizza</h5>
+                      <p class="small menu-discription">
+                        Eggs served atop a bed of sautéed spinach, typically
+                        topped with hollandaise sauce, offering a delightful
+                        combination of flavors and textures...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item radius-bottom shadow-on-hover">
+                  <img
+                    class="radius-top img-fluid"
+                    src="/Images/Lunch/All-American-Hamburgers_EXPS_CWAS22_29321_P2_MD_04_19_1b_v2.jpg"
+                    alt=""
+                  />
+                  <div class="menu-item-content p-4 bg-dark radius-bottom">
+                    <div>
+                      <span>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-half-fill star-icon"></i>
+                      </span>
+
+                      <h5 class="mt-2 mb-3 menu-name">HamBurger</h5>
+                      <p class="small menu-discription">
+                        Eggs served atop a bed of sautéed spinach, typically
+                        topped with hollandaise sauce, offering a delightful
+                        combination of flavors and textures...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item radius-bottom shadow-on-hover">
+                  <img
+                    class="radius-top img-fluid"
+                    src="/Images/Lunch/depositphotos_98232150-stock-photo-pan-fried-salmon-with-tender.jpg"
+                    alt=""
+                  />
+                  <div class="menu-item-content bg-dark p-4 radius-bottom">
+                    <div>
+                      <span>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-half-fill star-icon"></i>
+                      </span>
+
+                      <h5 class="mt-2 mb-3 menu-name">Smoked Salmon</h5>
+                      <p class="small menu-discription">
+                        Eggs served atop a bed of sautéed spinach, typically
+                        topped with hollandaise sauce, offering a delightful
+                        combination of flavors and textures...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade show"
+            id="pills-dinner"
+            role="tabpanel"
+            aria-labelledby="pills-home-tab"
+            tabindex="0"
+          >
+            <div class="h4 my-5 text-center text-dark">
+              Delicious Dinner Options
+            </div>
+            <div class="row gy-4">
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item radius-bottom shadow-on-hover">
+                  <img
+                    class="radius-top img-fluid"
+                    src="/Images/Lunch/food-pasta-meat-still-life-wallpaper-preview.jpg"
+                    alt=""
+                  />
+                  <div class="menu-item-content p-4 bg-dark radius-bottom">
+                    <div>
+                      <span>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-half-fill star-icon"></i>
+                      </span>
+
+                      <h5 class="mt-2 mb-3 menu-name">Pasta Primavera</h5>
+                      <p class="small menu-discription">
+                        Eggs served atop a bed of sautéed spinach, typically
+                        topped with hollandaise sauce, offering a delightful
+                        combination of flavors and textures...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item radius-bottom shadow-on-hover">
+                  <img
+                    class="radius-top img-fluid"
+                    src="/Images/Lunch/HD-wallpaper-pizza-food-veg-eat.jpg"
+                    alt=""
+                  />
+                  <div class="menu-item-content p-4 bg-dark radius-bottom">
+                    <div>
+                      <span>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-half-fill star-icon"></i>
+                      </span>
+
+                      <h5 class="mt-2 mb-3 menu-name">Margherita Pizza</h5>
+                      <p class="small menu-discription">
+                        Eggs served atop a bed of sautéed spinach, typically
+                        topped with hollandaise sauce, offering a delightful
+                        combination of flavors and textures...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item radius-bottom shadow-on-hover">
+                  <img
+                    class="radius-top img-fluid"
+                    src="/Images/Lunch/depositphotos_98232150-stock-photo-pan-fried-salmon-with-tender.jpg"
+                    alt=""
+                  />
+                  <div class="menu-item-content p-4 bg-dark radius-bottom">
+                    <div>
+                      <span>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-half-fill star-icon"></i>
+                      </span>
+
+                      <h5 class="mt-2 mb-3 menu-name">Pan Fried Salmon</h5>
+                      <p class="small menu-discription">
+                        Eggs served atop a bed of sautéed spinach, typically
+                        topped with hollandaise sauce, offering a delightful
+                        combination of flavors and textures...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item radius-bottom shadow-on-hover">
+                  <img
+                    class="radius-top img-fluid"
+                    src="/Images/Lunch/easy-dinner-recipes-teg-new-gallery.jpeg"
+                    alt=""
+                  />
+                  <div class="menu-item-content bg-dark p-4 radius-bottom">
+                    <div>
+                      <span>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-half-fill star-icon"></i>
+                      </span>
+
+                      <h5 class="mt-2 mb-3 menu-name">Noodles</h5>
+                      <p class="small menu-discription">
+                        Eggs served atop a bed of sautéed spinach, typically
+                        topped with hollandaise sauce, offering a delightful
+                        combination of flavors and textures...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade show"
+            id="pills-dessert"
+            role="tabpanel"
+            aria-labelledby="pills-home-tab"
+            tabindex="0"
+          >
+            <div class="h4 my-5 text-center text-dark">
+              Delicious Dessert Options
+            </div>
+            <div class="row gy-4">
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item radius-bottom shadow-on-hover">
+                  <img
+                    class="radius-top img-fluid"
+                    src="/Images/Desserts/1371609235461.jpeg"
+                    alt=""
+                  />
+                  <div class="menu-item-content p-4 bg-dark radius-bottom">
+                    <div>
+                      <span>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-half-fill star-icon"></i>
+                      </span>
+
+                      <h5 class="mt-2 mb-3 menu-name">Berry Tart</h5>
+                      <p class="small menu-discription">
+                        Eggs served atop a bed of sautéed spinach, typically
+                        topped with hollandaise sauce, offering a delightful
+                        combination of flavors and textures...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item radius-bottom shadow-on-hover">
+                  <img
+                    class="radius-top img-fluid"
+                    src="/Images/Desserts/519944f37f3f8f436cda3c2859369c91.jpg"
+                    alt=""
+                  />
+                  <div class="menu-item-content p-4 bg-dark radius-bottom">
+                    <div>
+                      <span>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-half-fill star-icon"></i>
+                      </span>
+
+                      <h5 class="mt-2 mb-3 menu-name">Mango Cake</h5>
+                      <p class="small menu-discription">
+                        Eggs served atop a bed of sautéed spinach, typically
+                        topped with hollandaise sauce, offering a delightful
+                        combination of flavors and textures...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item radius-bottom shadow-on-hover">
+                  <img
+                    class="radius-top img-fluid"
+                    src="/Images/Desserts/croissant-plus---danesi-o-vroissant-mandorla.jpg"
+                    alt=""
+                  />
+                  <div class="menu-item-content p-4 bg-dark radius-bottom">
+                    <div>
+                      <span>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-half-fill star-icon"></i>
+                      </span>
+
+                      <h5 class="mt-2 mb-3 menu-name">Croissant</h5>
+                      <p class="small menu-discription">
+                        Eggs served atop a bed of sautéed spinach, typically
+                        topped with hollandaise sauce, offering a delightful
+                        combination of flavors and textures...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item radius-bottom shadow-on-hover">
+                  <img
+                    class="radius-top img-fluid"
+                    src="/Images/Desserts/dessert-wallpaper-3.jpg"
+                    alt=""
+                  />
+                  <div class="menu-item-content bg-dark p-4 radius-bottom">
+                    <div>
+                      <span>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-fill star-icon"></i>
+                        <i class="ri-star-half-fill star-icon"></i>
+                      </span>
+
+                      <h5 class="mt-2 mb-3 menu-name">Chocolate Cake</h5>
+                      <p class="small menu-discription">
+                        Eggs served atop a bed of sautéed spinach, typically
+                        topped with hollandaise sauce, offering a delightful
+                        combination of flavors and textures...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
