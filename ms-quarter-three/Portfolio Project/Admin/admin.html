@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+  <link rel="stylesheet" href="../Login-Form/login.css" />
+  <body onload="loadMenu()">
+    <div id="welcomeMessage" class="admindisplay">
+      <h2>Welcome, <span id="firstName"></span>!</h2>
+
+      <div class="container d-flex justify-content-center mt-5">
+        <div class="col-8">
+          <div>
+            <div class="card">
+              <div class="card-header">Add Menu</div>
+              <div class="card-body">
+                <form id="menuItem">
+                  <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Enter name"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="price">Price:</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="price"
+                      placeholder="Enter price"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea
+                      class="form-control"
+                      id="description"
+                      rows="3"
+                      placeholder="Enter description"
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn bg" id="save">Save</button>
+                </form>
+              </div>
+            </div>
+            <div class="m-3 ml-4">
+              <button
+                class="bg-danger text-white border-0 p-2 rounded-2 m-2"
+                id="deleteButton"
+              >
+                Delete
+              </button>
+              <button
+                class="bg-success border-0 p-2 rounded-2 m-2"
+                id="updateButton"
+              >
+                Update
+              </button>
+              <button
+                class="bg-info border-0 p-2 rounded-2 m-2"
+                id="logoutButton"
+                href=""
+              >
+                Logout
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-5 text-center">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody id="table-data">
+              <tr>
+                <td id="menu-id"></td>
+                <td id="menu-name"></td>
+                <td id="menu-price"></td>
+                <td id="menu-description"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="admin.js"></script>
+    <script>
+      src =
+        "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js";
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

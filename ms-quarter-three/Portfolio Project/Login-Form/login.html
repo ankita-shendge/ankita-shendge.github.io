@@ -14,13 +14,13 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="login.css" />
 
     <title>Login|Pacifica</title>
   </head>
-  <body onload="loadMenu()">
+  <body onload="attachedButton()">
     <div class="text-center mt-5 pt-5 title-img">
-      <img src="../Images/62792624bb132b96e73ee349.png" alt="..." />
+      <img src="../Images/Logo/62792624bb132b96e73ee349.png" alt="..." />
     </div>
     <div class="container d-flex justify-content-center align-content-center">
       <form class="" id="login-form" style="display: block">
@@ -58,7 +58,7 @@
         </div>
       </form>
       <!-- To display welcome message after Logged In -->
-      <div id="welcomeMessage" class="admindisplay">
+      <!-- <div id="welcomeMessage" class="admindisplay">
         <h2>Welcome, <span id="firstName"></span>!</h2>
 
         <div class="container d-flex justify-content-center mt-5">
@@ -143,16 +143,16 @@
             </table>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <!-- Linking boostrap JS -->
+    <script src="login.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
-    <script src="../js/login.js"></script>
   </body>
 </html>

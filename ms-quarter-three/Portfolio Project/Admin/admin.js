@@ -1,47 +1,3 @@
-/*
-  Author: Ankita Mahadeo Shendge
-  Course: ICT 4510 - Adv Web Design and Development 
-  Date: 20 July 2023
-  Description: This script sends a POST request to the server for user login,
-  saves the user object to sessionStorage upon successful login,
-  and displays admin page, after clicking to logout sucessfully redirect to home page.
-*/
-// Login POST request
-document
-  .getElementById("login-form")
-  .addEventListener("submit", function (event) {
-    event.preventDefault();
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
-
-    fetch("https://ict4510.herokuapp.com/api/login", {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-      },
-
-      body: JSON.stringify({
-        username: username,
-        password: password,
-      }),
-    })
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        return response.json();
-      })
-
-      .then((userObject) => {
-        sessionStorage.setItem("user", JSON.stringify(userObject));
-        document.getElementById("login-form").style.display = "none";
-        document.getElementById("welcomeMessage").style.display = "block";
-        document.getElementById("firstName").innerText =
-          userObject.user.first_name;
-      })
-      .catch((error) => console.log("Error occurred during fetch:", error));
-  });
-
 // SAVE form POST request
 
 document
@@ -90,7 +46,6 @@ document
   });
 
 // to GET menu and display
-
 function loadMenu() {
   fetch(
     "https://ict4510.herokuapp.com/api/menus?api_key=1d43499fe5a386bbe27cb1af5c2864b7",
@@ -117,31 +72,12 @@ function loadMenu() {
                   <td id="menu-description">${values.description}</td>
                 </tr>`;
       });
+
       document.getElementById("table-data").innerHTML = tableData;
-      loadMenu();
     });
 }
-
+// logout redirect to home.html
 document.getElementById("logoutButton").addEventListener("click", function () {
   sessionStorage.removeItem("user");
-  window.location.href = "../../HTML/home.html";
+  window.location.href = "../Main/home.html";
 });
-
-// document.getElementById("delete").addEventListener("click", deleteMenuItem());
-// function deleteMenuItem() {
-//   fetch(
-//     "https://ict4510.herokuapp.com/api/menus?api_key=1d43499fe5a386bbe27cb1af5c2864b7&id=1474",
-//     {
-//       method: "DELETE",
-//       headers: {
-//         id: JSON.parse(sessionStorage.getItem("user")).user.id,
-//         "x-access-token": JSON.parse(sessionStorage.getItem("user")).user.token,
-//       },
-//     }
-//   ).then((response) => {
-//     if (response.ok) {
-//       console.log(response.json());
-//       return response.json();
-//     }
-//   });
-// }
