@@ -1,0 +1,20 @@
+/* title img "Pacifica" css */
+
+.title-img img {
+  width: 30vw;
+  height: 20vh;
+}
+
+/* submit btn css */
+.btn-submit {
+  background-color: #c6b21c;
+  padding: 5px 15px;
+}
+
+.bg {
+  background-color: #c6b21c;
+}
+
+.admindisplay {
+  display: none;
+}
