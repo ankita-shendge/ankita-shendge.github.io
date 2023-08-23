@@ -71,6 +71,7 @@ function loadMenu() {
     })
     .then((loadedMenu) => {
       let tableData = " ";
+      console.log(loadedMenu);
       loadedMenu.menu.map((values) => {
         tableData += ` <tr>
                    <td id="menu-id"> ${values.id}</td>

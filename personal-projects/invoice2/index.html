@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/840d1e77bc.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 900px)"
+      href="style.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 900px)"
+      href="responsive.css"
+    />
+
+    <title>Invoice</title>
+  </head>
+
+  <body>
+    <div class="wrapper-box">
+      <div class="container-left">
+        <div class="cloud">
+          <i class="fa fa-cloud-upload" aria-hidden="true"></i>
+        </div>
+        <div class="date-box">
+          <div class="left">
+            <label for="">Date:</label>
+            <label class="date-time" id="date-time"></label>
+          </div>
+          <div class="right">
+            <label for="">Due date:</label>
+            <input
+              class="grey"
+              type="date"
+              placeholder="Select date"
+              required
+              pattern="dd/mm/yyyy"
+              min="2022-04-01"
+              max="2022-04-30"
+            />
+          </div>
+        </div>
+        <div class="main-tittle">
+          Invoice <em> #</em><span class="grey">001</span>
+        </div>
+        <div class="form-to-box">
+          <div class="form-part">
+            <div class="tittle-form">Bill from</div>
+            <div>
+              <input type="Email" placeholder="Email" />
+            </div>
+            <div>
+              <textarea
+                name=""
+                id=""
+                rows="4"
+                placeholder="Who is this this invoice from?"
+              ></textarea>
+            </div>
+          </div>
+          <div class="to-part">
+            <div class="tittle-to">Bill from</div>
+            <div>
+              <input type="Email" placeholder="Email" />
+            </div>
+            <div>
+              <textarea
+                name=""
+                id=""
+                rows="4"
+                placeholder="Who is this this invoice to?"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="scrollit">
+          <table>
+            <tr>
+              <th class="th-item">ITEM</th>
+              <th class="th-qty">QTY</th>
+              <th class="th-rate">RATE</th>
+              <th class="th-ttl">TOTAL</th>
+              <th class="th-action">ACTION</th>
+            </tr>
+            <tr>
+              <td>
+                <input class="item-box" type="text" placeholder="Item name" />
+              </td>
+              <td>
+                <input class="qty-box" type="number" placeholder="0" />
+              </td>
+              <td>
+                <input class="rate-box" type="text" placeholder="$0.00" />
+              </td>
+              <td>
+                <input class="total-box" type="text" placeholder="$0.00" />
+              </td>
+              <td>
+                <button class="action-box">
+                  <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input class="item-box" type="text" placeholder="Description" />
+              </td>
+            </tr>
+          </table>
+        </div>
+       
+        <div class="tax-box">
+          <div class="left-part">
+            <button>Add item</button>
+          </div>
+          <div class="right-part">
+            <div class="sub-total">
+              <label for="">Subtotal</label>
+              <input type="text" placeholder="0.00" />
+            </div>
+            <button>Add disscount</button>
+            <button>Add task</button>
+            <div class="total">
+              <label for="">Total</label>
+              <input type="text" placeholder="0.00" />
+            </div>
+          </div>
+        </div>
+        <div class="note-box">
+          <div>
+            <label for="">Notes</label>
+          </div>
+          <textarea
+            name=""
+            id=""
+            placeholder="Thanks for youur business!"
+          ></textarea>
+        </div>
+      </div>
+      <div class="container-right">
+        <button class="blue-btn">
+          <i class="fa fa-telegram"></i>Send Invoice
+        </button>
+        <div class="pre-dow">
+          <button class="white-btn">Preview</button>
+          <button class="white-btn2">Download</button>
+        </div>
+        <div class="tittle-currency">
+          <label for="">Currency</label>
+        </div>
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn"></button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#"> USD(United States Dollars)</a>
+            <a href="#"> India Rupees - INR</a>
+            <a href="#">Japan Yen - JPY</a>
+          </div>
+        </div>
+        <div class="method-box">
+          <div class="mothods">
+            <label for="">Payment method </label>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="mothods">
+            <label for="">Late fees </label>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="mothods">
+            <label for="">Notes</label>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var today = new Date();
+      var date =
+        today.getDate() + "/" + today.getMonth() + "/" + today.getFullYear();
+      document.getElementById("date-time").innerHTML = date;
+    </script>
+    <script>
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
+  </body>
+</html>
