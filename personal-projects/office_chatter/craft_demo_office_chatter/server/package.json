@@ -1,0 +1,16 @@
+{
+  "name": "com.ankita.twitter",
+  "version": "1.0.0",
+  "description": "twitter rest apis",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "ankita mahadeo shendge",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3",
+    "path": "^0.12.7"
+  }
+}

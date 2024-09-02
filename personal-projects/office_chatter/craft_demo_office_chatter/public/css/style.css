@@ -1,0 +1,465 @@
+/* Common styles */
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: ".SF NS Rounded";
+  list-style: none;
+  font-size: large;
+  /* border: 1px solid black; */
+}
+
+.inner {
+  margin: 0 auto;
+  padding: 30px;
+  max-width: 1200px;
+  background-color: rgba(224, 225, 226, 0.835);
+}
+
+/* User Profile Information */
+
+.user_info {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: white;
+  padding: 15px 10px;
+  border-radius: 20px;
+}
+.left_part {
+  display: flex;
+}
+.user_name_info {
+  padding: 20px;
+}
+
+#profile_img {
+  width: 150px;
+  max-height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px solid #007aff;
+}
+
+#profile_name {
+  font-size: 25px;
+  margin-bottom: 0.1rem;
+  font-weight: 600;
+}
+
+#profile_handle {
+  margin-bottom: 0;
+  color: #007aff;
+}
+
+/* Right User Info */
+.right_part {
+  margin-right: 10px;
+  padding-top: 5px;
+}
+.right_part_one {
+  display: flex;
+  margin-top: 45px;
+}
+.more_btn .fa-solid {
+  display: none;
+}
+
+.edit_btn {
+  display: block;
+  background-color: #346ee4;
+  border: none;
+  width: 120px;
+  border-radius: 15px;
+  color: white;
+  padding: 5px 10px;
+}
+
+.fa-regular {
+  margin-top: 8px;
+  margin-right: 5px;
+  color: #346ee4;
+  font-size: 20px;
+}
+
+.active {
+  color: #007aff;
+}
+/* Navbar CSS */
+.navbar {
+  border-radius: 15px;
+  border: 1px solid rgb(220, 220, 220);
+  margin-bottom: 20px;
+}
+.navbar-nav .nav-link.active {
+  color: #007aff;
+  font-weight: 550;
+}
+
+.navbar-nav .nav-link {
+  font-size: 18px;
+}
+
+/* New Post Card */
+.new_post .card {
+  border-radius: 20px;
+}
+.content {
+  padding-right: 10px;
+}
+.content .counter {
+  margin-right: 15px;
+  padding-right: 10px;
+  border-right: 1px solid rgb(128, 123, 123);
+}
+.post_icon {
+  padding-left: 10px;
+}
+/* Tweets Timeline */
+#all_tweets .card {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+.top_part {
+  margin: 0px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.left {
+  display: flex;
+}
+
+.left img {
+  width: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
+  height: 5rem;
+  border: 1.5px solid #007aff;
+}
+/* tweets */
+.tweet_info {
+  display: flex;
+  padding-bottom: 0px;
+}
+.tweet_info p {
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.tweet_info p span {
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.tweet_user_name,
+.tweet_user_handle {
+  margin-top: 30px;
+}
+
+.tweet_user_name {
+  padding-left: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 7.5rem;
+  padding-left: 10px;
+}
+
+.tweet_user_handle {
+  padding-left: 5px;
+}
+
+.tweet_user_handle span {
+  color: #007aff;
+}
+
+.tweethandle {
+  margin-top: 32px;
+  margin-right: 20px;
+  font-size: 15px;
+}
+.mid-part {
+  margin-top: 20px;
+}
+.mid-part p {
+  margin: 5px 10px;
+  font-size: 1rem;
+}
+
+.bottom_part span {
+  padding: 15px;
+}
+
+.fa-arrow-up-right-from-square {
+  color: #346ee4;
+}
+
+.bottom_part {
+  padding-left: 5px;
+}
+.bottom_part span {
+  padding: 5px;
+  font-size: 18px;
+}
+.bottom_part span i {
+  padding-right: 5px;
+  font-size: 18px;
+}
+
+#load_old_posts {
+  width: 200px;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: #007aff;
+  color: white;
+  border: none;
+  margin: 0 auto;
+}
+
+/* For smaller tablets, larger smartphones in landscape mode, and some smaller laptops. */
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  /* Initial CSS */
+  .inner {
+    margin: 0 auto;
+    padding: 20px 30px;
+    width: 100%;
+    background-color: rgba(224, 225, 226, 0.474);
+  }
+  /* Profile CSS  */
+  .user_info {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+  }
+  .user_name_info {
+    padding-top: 15px;
+    padding-left: 20px;
+  }
+
+  #profile_img {
+    width: 100px;
+    max-height: 100px;
+  }
+  #profile_handle {
+    font-size: 15px;
+  }
+  #profile_name {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .more_btn .fa-solid {
+    display: block;
+    width: 40px;
+    position: absolute;
+    top: 18%;
+    right: 5%;
+    font-size: 20px;
+  }
+  .edit_btn {
+    display: none;
+  }
+  /* Post New Tweets */
+  .post_icon {
+    margin-left: 10px;
+    text-align: center;
+  }
+  .post_icon a {
+    text-align: center;
+  }
+  /* Tweets Timeline */
+  #tweet_user_photo {
+    width: 70px;
+    max-height: 70px;
+    margin-top: 12px;
+    object-fit: cover;
+  }
+  #tweet_user_handle {
+    padding-left: 0px;
+  }
+  .tweet_info {
+    margin-bottom: 0px;
+  }
+  .tweet_info p {
+    font-size: 13px;
+  }
+
+  .tweet_info p span {
+    font-size: 15px;
+  }
+  .top_part {
+    display: flex;
+    flex-direction: column;
+  }
+  .left {
+    display: flex;
+  }
+
+  .tweethandle {
+    margin-top: 0px;
+    margin-right: 0px;
+    text-align: end;
+    margin-bottom: 0;
+  }
+}
+
+/* For small screen size like mobiles */
+@media screen and (max-width: 480px) {
+  /* User Profile Info */
+  #profile_img {
+    width: 70px;
+    max-height: 70px;
+    margin-top: 5px;
+  }
+
+  #profile_name {
+    font-size: 15px;
+    color: black;
+  }
+
+  #profile_handle {
+    font-size: 15px;
+  }
+
+  .user_info {
+    padding: 20px 10px;
+  }
+  .left_part {
+    display: flex;
+  }
+  .right_part {
+    display: none;
+  }
+  .user_name_info {
+    padding: 10px;
+  }
+
+  .edit_btn {
+    display: none;
+  }
+  .more_btn .fa-solid {
+    display: block;
+    width: 40px;
+    position: absolute;
+    top: 10%;
+    right: 2%;
+  }
+  #tweet_count,
+  #following_count,
+  #followers_count {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  /* New Post Tweet */
+  .new_post .card {
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .new_post .card-body {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .post_icon {
+    margin-left: 10px;
+    text-align: center;
+  }
+  .post_icon a {
+    text-align: center;
+  }
+  .fa-regular,
+  .fa-solid {
+    font-size: 20px;
+    width: 15px;
+  }
+
+  .content .counter {
+    margin-right: 3px;
+    padding-right: 5px;
+  }
+
+  /* Tweets Timeline */
+
+  #all_tweets .card {
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  #tweet_user_photo {
+    width: 50px;
+    max-height: 50px;
+    margin-top: 12px;
+    object-fit: cover;
+  }
+  .top_part {
+    display: block;
+    flex-direction: column;
+  }
+  .left {
+    display: flex;
+  }
+
+  .tweethandle {
+    margin-top: 0px;
+    margin-right: 0px;
+    text-align: end;
+    margin-bottom: 0;
+  }
+
+  .tweet_info {
+    display: flex;
+    flex-direction: row;
+  }
+  .tweet_info p {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    margin-bottom: 0;
+    padding: 0px;
+    padding-right: 5px;
+  }
+
+  .tweet_user_name {
+    margin-bottom: 0px;
+    font-size: 15px;
+    margin-top: 28px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100px;
+    padding-left: 10px;
+  }
+
+  .tweet_user_handle {
+    margin-top: 25px;
+    font-weight: 600;
+    padding-left: 0px;
+  }
+  .tweet_user_handle span {
+    font-size: 12px;
+    margin-top: 0px;
+  }
+  .bottom_part {
+    padding-left: 4px;
+  }
+  .bottom_part span {
+    padding: 5px;
+    font-size: 15px;
+  }
+  .bottom_part span i {
+    padding-right: 5px;
+    font-size: 15px;
+  }
+  #load_old_posts {
+    width: 150px;
+  }
+}
