@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style..css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <div class="name">Ankita Shendge</div>
+          <div class="burger" id="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+          <ul class="nav-links" id="nav-links">
+            <li><a class="item" href="#header">Home</a></li>
+            <li><a class="item" href="#about">About</a></li>
+            <li><a class="item" href="#services">Services</a></li>
+            <li><a class="item" href="#portfolio">Portfolio</a></li>
+            <li><a class="item" href="#contact">Contact</a></li>
+            <li class="close"><span>&times;</span></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>Front-End Developer</p>
+          <h1>
+            <span>Hi, I'm Ankita </span><br />
+            From San Fransisco
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img
+              src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fHRlY2hub2xvZ3l8ZW58MHwxfDB8fHww"
+            />
+          </div>
+          <div class="about-col-2">
+            <h2 class="one">About Me</h2>
+            <p class="text">
+              Hello, my name is Ankita! I have a passion for creating beautiful
+              and user-friendly websites that look amazing on mobile devices.
+              When it comes to coding, I believe in writing clean and
+              easy-to-understand code. I'm skilled in HTML/CSS, Bootstrap,
+              JavaScript, API, and GSAP animation. I'm always eager to learn and
+              stay up-to-date with the latest technologies. It's an important
+              part of my journey as a web developer .
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link">Skills</p>
+              <p class="tab-links">Experience</p>
+              <p class="tab-links">Education</p>
+            </div>
+            <div class="tab-contents" id="skills">
+              <ul>
+                <li><span>HTML5/CSS3</span></li>
+                <li><span>JavaScript</span></li>
+                <li><span>React/Redux/Node.js</span></li>
+                <li><span>Bootstrap-5</span></li>
+                <li><span>REST API</span></li>
+                <li><span>Figma</span></li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2022 - current</span><br />React Developer</li>
+                <li>
+                  <span>2018 - current</span><br />Associate System Engineer
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Masters Degree</span><br />
+                  Denver University 2024 | Information Technology
+                </li>
+                <li>
+                  <span>Bachelor's degree</span><br />University of Pune |
+                  Computer Engineering
+                </li>
+                <li><span>Certificate 2024</span><br />React Developer</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="services">
+      <div class="container">
+        <h2 class="sub-title">My Services</h2>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Front-End Development</h2>
+            <p>
+              Creating the visual elements of a website that users interact
+              with, such as React, HTML, CSS, and JavaScript. This involves
+              ensuring a seamless user experience and compatibility across
+              different browsers and devices.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-pen"></i>
+            <h2>Responsive Design</h2>
+            <p>
+              Developing websites that adapt and display properly on various
+              devices and screen sizes, including desktops, laptops, tablets,
+              and smartphones.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-laptop-code"></i>
+            <h2>Frameworks and Libraries</h2>
+            <p>
+              Mastered React fundamentals and advanced concepts like performance
+              optimization, API integration, and testing. Enhanced user
+              engagement with animations and interactive elements using CSS and
+              GSAP. Prioritized efficient workflows, Git, and collaboration
+              through Agile practices and code reviews.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="portfolio">
+      <div class="container">
+        <h2 class="sub-title">My Work</h2>
+        <div class="work-list">
+          <div class="work">
+            <img
+              src="./Images/images.jpeg"
+              style="transform: translate(0px, 0px)"
+            />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                Utilized Spotify developer tools and documentation to create a
+                product displaying albums, their tracks, and search
+                functionality. Implemented a sign-in system with OAuth 2.0 API
+                authorization to obtain an access token, which is used in API
+                requests via RESTful APIs and React Components.
+              </p>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./Images/eccomerce.png" />
+            <div class="layer">
+              <h3>Ecommerce Application</h3>
+              <p>
+                Mobile Application Development using Flutter and Dart, ensuring
+                compatibility for both iOS, Android and Web.The app includes
+                user authentication, product browsing, personalized user
+                profiles, a seamless checkout process, and an order history
+                feature with Server-Side coding delivering a smooth and engaging
+                user experience with cross browser compatibility.
+              </p>
+            </div>
+          </div>
+          <div class="work">
+            <img
+              src="https://cdn.glitch.global/10a4e74b-465f-456e-bd99-a36c6517f0aa/w.jpg?v=1712719506652"
+            />
+            <div class="layer">
+              <h3>OfficeChatter</h3>
+              <p>
+                Client Facing Twitter-like page layout for employees to post
+                tweets, featuring pagination for improved UX. Utilized GET and
+                POST APIs with JSON data for dynamic content, ensured responsive
+                design using media queries, Also used Handlebars for efficient
+                templating
+              </p>
+            </div>
+          </div>
+          <div class="work">
+            <img
+              src="https://cdn.glitch.global/10a4e74b-465f-456e-bd99-a36c6517f0aa/q.jpg?v=1712719498536"
+            />
+            <div class="layer">
+              <h3>Ecommerce - Clothing</h3>
+              <p>
+                Added features like user registration and login system with
+                dynamic profile management for screen name and theme color
+                personalization using JavaScript and DOM manipulation for
+                real-time updates. Product displays using JSON data for men's
+                and women's shirts, and implemented cart functionality with
+                local storage to show updated prices, quantities, and totals.
+              </p>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./Images/vitacare.png" />
+            <div class="layer">
+              <h3>VitaCare</h3>
+              <p>
+                Prototyped UX for an integrated health management application
+                layout user Interface, focusing on Figma for software feature
+                design.
+              </p>
+              <a
+                href="https://www.figma.com/proto/JJ0rd5unX160MGRSjqOw4p/VitaCare?page-id=11%3A841&type=design&node-id=139-6233&viewport=-618%2C367%2C0.04&t=Hvg429gjDO7SgDla-1&scaling=scale-down"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./Images/pacifica.png" />
+            <div class="layer">
+              <h3>Pacifica</h3>
+              <p>
+                Responsive website for a fictional restaurant, Bootstrap for
+                CSS. Enhanced the user experience with REST API integration for
+                menu display, implemented an admin page for to add/delete menu
+                and utilized the Leaflet JavaScript library for an interactive
+                map and responsiveness.
+              </p>
+              <a
+                href="https://ankita-shendge.github.io/ms-quarter-three/Portfolio%20Project/Main/home.html"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./Images/restrobar.png" />
+            <div class="layer">
+              <h3>Restrobar</h3>
+              <p>
+                Implemented low to high-fidelity prototype, JavaScript DOM
+                manipulation for dynamic carousels, and developed REST APIs for
+                menu retrieval and posting admin page.
+              </p>
+              <a
+                href="https://ankita-shendge.github.io/ms-quarter-two/Porfolio%20Project/Final/home.html"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img
+              src="https://cdn.glitch.global/10a4e74b-465f-456e-bd99-a36c6517f0aa/3.webp?v=1712789376341"
+              style="transform: translate(0px, 0px)"
+            />
+            <div class="layer">
+              <h3>Static Pages</h3>
+              <p>
+                Developed responsive static pages using HTML and CSS,
+                incorporating Flexbox and Grid for adaptive, mobile-first
+                layouts. Utilized CSS animations to enhance interactivity and
+                ensure a visually engaging, user-friendly experience across
+                browsers.
+              </p>
+              <a
+                href="https://github.com/ankita-shendge/ankita-shendge.github.io/tree/main/personal-projects"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">Select more</a>
+      </div>
+    </div>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h2 class="sub-title">Contact Me</h2>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i> ankitashendge15@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i>+15105525965</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/ankita-shendge/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                href="https://github.com/ankita-shendge/ankita-shendge.github.io"
+                ><i class="fa fa-github" aria-hidden="true"></i
+              ></a>
+            </div>
+            <a href="resume/sept_29.pdf" class="btn btn2">Download Resume</a>
+          </div>
+          <div class="contact-right">
+            <form action="https://formspree.io/f/xyzgrnwz" method="POST">
+              <label
+                ><input
+                  type="text"
+                  name="Name"
+                  placeholder="Your Name"
+                  required
+                />
+              </label>
+              <label
+                ><input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+              /></label>
+              <label>
+                <textarea name="message" placeholder="Your Message"></textarea>
+              </label>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright <i class="fa-solid fa-copyright"></i> Ankita.</p>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/dc7de0362b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
