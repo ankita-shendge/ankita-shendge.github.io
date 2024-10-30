@@ -31,8 +31,7 @@ class CreateAccountPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Register Now!'),
         backgroundColor: Colors.orangeAccent,
-        ),
-
+      ),
       body: Padding(
         padding: const EdgeInsets.all(20.0),
         child: Center(
@@ -61,10 +60,13 @@ class CreateAccountPage extends StatelessWidget {
                   await createAccount();
                   Navigator.pop(context);
                 },
-                child: const Text('Submit', style: TextStyle(color: Colors.black, fontSize: 15),),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.orangeAccent,
                   minimumSize: const Size(double.infinity, 50),
+                ),
+                child: const Text(
+                  'Submit',
+                  style: TextStyle(color: Colors.black, fontSize: 15),
                 ),
               ),
             ],

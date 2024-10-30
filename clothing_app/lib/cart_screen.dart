@@ -41,21 +41,24 @@ class _CartScreenState extends State<CartScreen> {
       return sum + (price * quantity);
     });
 
-    Future<void> _checkout() async {
+    Future<void> checkout() async {
       if (widget.cart.isEmpty) {
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(
-            content:  Text('Your cart is empty. Add items to the cart first.'),
+            content: Text('Your cart is empty. Add items to the cart first.'),
           ),
         );
         return;
       }
 
-      double total = widget.cart.fold(0, (sum, item) => sum + item['productPrice']);
-      final orderID = await DatabaseHelper.instance.createOrder(widget.user['userID'], total);
+      double total =
+          widget.cart.fold(0, (sum, item) => sum + item['productPrice']);
+      final orderID = await DatabaseHelper.instance
+          .createOrder(widget.user['userID'], total);
 
       for (var product in widget.cart) {
-        await DatabaseHelper.instance.createOrderedProduct(orderID, product['productID'], product['quantity']);
+        await DatabaseHelper.instance.createOrderedProduct(
+            orderID, product['productID'], product['quantity']);
       }
 
       setState(() {
@@ -86,7 +89,6 @@ class _CartScreenState extends State<CartScreen> {
           content: Text('Successfully ordered products'),
         ),
       );
-
     }
 
     return Scaffold(
@@ -96,105 +98,121 @@ class _CartScreenState extends State<CartScreen> {
       ),
       body: groupedItems.isEmpty
           ? const Center(
-        child:  Text(
-          'Need to shop first!',
-          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-        ),)
+              child: Text(
+                'Need to shop first!',
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
+            )
           : Column(
-        children: [
-          Expanded(
-            child: ListView(
-              children: groupedItems.entries.map((entry) {
-                final productName = entry.key;
-                final items = entry.value;
-                final quantity = items.fold(0, (sum, item) => (item['quantity'] ?? 0) + sum);
-                final price = items.isNotEmpty ? double.tryParse(items[0]['productPrice'].toString()) ?? 0 : 0;
-                final totalItemPrice = price * quantity;
+              children: [
+                Expanded(
+                  child: ListView(
+                    children: groupedItems.entries.map((entry) {
+                      final productName = entry.key;
+                      final items = entry.value;
+                      final quantity = items.fold(
+                          0, (sum, item) => (item['quantity'] ?? 0) + sum);
+                      final price = items.isNotEmpty
+                          ? double.tryParse(
+                                  items[0]['productPrice'].toString()) ??
+                              0
+                          : 0;
+                      final totalItemPrice = price * quantity;
 
-                return Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: Card(
-                    elevation: 5,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(16.0),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            productName,
-                            style: const TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold,
+                      return Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Card(
+                          elevation: 5,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  productName,
+                                  style: const TextStyle(
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                const SizedBox(height: 8),
+                                ...items.map((item) {
+                                  final itemQuantity = item['quantity'] ?? 0;
+                                  final itemPrice = double.tryParse(
+                                          item['productPrice'].toString()) ??
+                                      0;
+                                  final totalItem = itemPrice * itemQuantity;
+
+                                  return Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                        vertical: 4.0),
+                                    child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Text(
+                                          '${item['productName']} x$itemQuantity',
+                                          style: TextStyle(
+                                              fontSize: 16,
+                                              color: Colors.grey[800]),
+                                        ),
+                                        Text(
+                                          '\$${totalItem.toStringAsFixed(2)}',
+                                          style: const TextStyle(
+                                              fontSize: 16,
+                                              color: Colors.green),
+                                        ),
+                                      ],
+                                    ),
+                                  );
+                                }),
+                                const SizedBox(height: 8),
+                                Text(
+                                  'Total for $productName: \$${totalItemPrice.toStringAsFixed(2)}',
+                                  style: const TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                              ],
                             ),
                           ),
-                          const SizedBox(height: 8),
-                          ...items.map((item) {
-                            final itemQuantity = item['quantity'] ?? 0;
-                            final itemPrice = double.tryParse(item['productPrice'].toString()) ?? 0;
-                            final totalItem = itemPrice * itemQuantity;
-
-                            return Padding(
-                              padding: const EdgeInsets.symmetric(vertical: 4.0),
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Text(
-                                    '${item['productName']} x$itemQuantity',
-                                    style: TextStyle(fontSize: 16, color: Colors.grey[800]),
-                                  ),
-                                  Text(
-                                    '\$${totalItem.toStringAsFixed(2)}',
-                                    style: const TextStyle(fontSize: 16, color: Colors.green),
-                                  ),
-                                ],
-                              ),
-                            );
-                          }).toList(),
-                          const SizedBox(height: 8),
-                          Text(
-                            'Total for $productName: \$${totalItemPrice.toStringAsFixed(2)}',
-                            style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                );
-              }).toList(),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                const Text(
-                  'Total Price:',
-                  style: const TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
+                        ),
+                      );
+                    }).toList(),
                   ),
                 ),
-                Text(
-                  '\$${totalPrice.toStringAsFixed(2)}',
-                  style: const TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.green,
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      const Text(
+                        'Total Price:',
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      Text(
+                        '\$${totalPrice.toStringAsFixed(2)}',
+                        style: const TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.green,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ],
             ),
-          ),
-        ],
-      ),
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.all(16.0),
         child: ElevatedButton(
-          onPressed: _checkout,
+          onPressed: checkout,
           style: ElevatedButton.styleFrom(
             backgroundColor: Colors.orangeAccent,
           ),

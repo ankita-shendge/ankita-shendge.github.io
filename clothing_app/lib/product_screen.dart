@@ -9,7 +9,6 @@ import 'cart_screen.dart';
 import 'profile_screen.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-
 class ProductScreen extends StatefulWidget {
   final Map<String, dynamic> user;
 
@@ -21,7 +20,7 @@ class ProductScreen extends StatefulWidget {
 
 class _ProductScreenState extends State<ProductScreen> {
   late Future<List<Map<String, dynamic>>> _productsFuture;
-  List<Map<String, dynamic>> _cart = [];
+  final List<Map<String, dynamic>> _cart = [];
 
   @override
   void initState() {
@@ -32,11 +31,13 @@ class _ProductScreenState extends State<ProductScreen> {
   void _addToCart(Map<String, dynamic> product) {
     setState(() {
       final productId = product['productID'];
-      final existingIndex = _cart.indexWhere((item) => item['productID'] == productId);
+      final existingIndex =
+          _cart.indexWhere((item) => item['productID'] == productId);
 
       if (existingIndex != -1) {
         // Update quantity for existing item
-        _cart[existingIndex]['quantity'] = (_cart[existingIndex]['quantity'] ?? 1) + 1;
+        _cart[existingIndex]['quantity'] =
+            (_cart[existingIndex]['quantity'] ?? 1) + 1;
       } else {
         // Add new item with quantity 1
         _cart.add({...product, 'quantity': 1});
@@ -89,10 +90,11 @@ class _ProductScreenState extends State<ProductScreen> {
                 style: Theme.of(context).textTheme.headlineSmall,
               ),
             ),
-        const SizedBox(height: 8),
+            const SizedBox(height: 8),
             ElevatedButton(
               onPressed: () async {
-                final Uri url = Uri.parse('http://192.168.4.28/ict4580/registration.html');
+                final Uri url =
+                    Uri.parse('http://192.168.4.28/ict4580/registration.html');
                 if (await canLaunchUrl(url)) {
                   await launchUrl(
                     url,
@@ -112,7 +114,6 @@ class _ProductScreenState extends State<ProductScreen> {
                 ),
               ),
             ),
-
             Expanded(
               child: FutureBuilder<List<Map<String, dynamic>>>(
                 future: _productsFuture,
@@ -141,21 +142,21 @@ class _ProductScreenState extends State<ProductScreen> {
                                 children: [
                                   product['productImage'] != null
                                       ? Image.asset(
-                                    product['productImage'],
-                                    height: 150,
-                                    width: double.infinity,
-                                    fit: BoxFit.cover,
-                                  )
+                                          product['productImage'],
+                                          height: 150,
+                                          width: double.infinity,
+                                          fit: BoxFit.cover,
+                                        )
                                       : Container(
-                                    height: 150,
-                                    width: double.infinity,
-                                    color: Colors.grey,
-                                    child: const Icon(
-                                      Icons.image,
-                                      size: 100,
-                                      color: Colors.white,
-                                    ),
-                                  ),
+                                          height: 150,
+                                          width: double.infinity,
+                                          color: Colors.grey,
+                                          child: const Icon(
+                                            Icons.image,
+                                            size: 100,
+                                            color: Colors.white,
+                                          ),
+                                        ),
                                   const SizedBox(height: 8),
                                   Text(
                                     product['productName'],
