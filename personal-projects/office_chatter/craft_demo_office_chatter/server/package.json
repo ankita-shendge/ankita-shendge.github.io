@@ -5,8 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "build": "next build"
+    "start": "node server/app.js",
+    "build": "node server/app.js"
   },
   "author": "ankita mahadeo shendge",
   "license": "ISC",
